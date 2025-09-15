@@ -135,7 +135,7 @@
             <aside class="docs-nav hidden-sm">
                 <h4>Getting Started</h4>
                 <a href="#introduction">Introduction</a>
-        
+
                 <a href="#install">Install</a>
                 <h4>Elements</h4>
                 <a href="#buttons">Buttons</a>
@@ -164,24 +164,24 @@
 
             <div>
                 <div class="grid  gap-4 visible-sm">
-                   <div> <a href="#introduction" class="underline text-gray-500">Introduction</a></div>
+                    <div> <a href="#introduction" class="underline text-gray-500">Introduction</a></div>
                     <div> <a href="#install" class="underline text-gray-500">Install</a></div>
                     <div><a href="#buttons" class="underline text-gray-500">Buttons</a></div>
-                   <div> <a href="#forms" class="underline text-gray-500">Forms</a></div>
-                   <div> <a href="#typography" class="underline text-gray-500">Typography</a></div>
-                   <div> <a href="#table" class="underline text-gray-500">Table</a></div>
-                   <div> <a href="#container" class="underline text-gray-500">Container</a></div>
-                   <div> <a href="#grid" class="underline text-gray-500">Grid System</a></div>
-                   <div> <a href="#spacing" class="underline text-gray-500">Spacing</a></div>
-                   <div> <a href="#card" class="underline text-gray-500">Card / Content Block</a></div>
-                   <div> <a href="#accordion" class="underline text-gray-500">Accordion</a></div>
-                   <div> <a href="#dialog" class="underline text-gray-500">Dialog (Modal)</a></div>
-                   <div> <a href="#dropdown" class="underline text-gray-500">Dropdown</a></div>
-                   <div> <a href="#flex-sizing" class="underline text-gray-500">Flex & Sizing</a></div>
-                   <div> <a href="#responsive" class="underline text-gray-500">Responsive Visibility</a></div>
-                   <div> <a href="#colors" class="underline text-gray-500">Colors</a></div>
-                   <div> <a href="#shadows" class="underline text-gray-500">Shadows</a></div>
-                   <div> <a href="#borders" class="underline text-gray-500">Borders</a></div>
+                    <div> <a href="#forms" class="underline text-gray-500">Forms</a></div>
+                    <div> <a href="#typography" class="underline text-gray-500">Typography</a></div>
+                    <div> <a href="#table" class="underline text-gray-500">Table</a></div>
+                    <div> <a href="#container" class="underline text-gray-500">Container</a></div>
+                    <div> <a href="#grid" class="underline text-gray-500">Grid System</a></div>
+                    <div> <a href="#spacing" class="underline text-gray-500">Spacing</a></div>
+                    <div> <a href="#card" class="underline text-gray-500">Card / Content Block</a></div>
+                    <div> <a href="#accordion" class="underline text-gray-500">Accordion</a></div>
+                    <div> <a href="#dialog" class="underline text-gray-500">Dialog (Modal)</a></div>
+                    <div> <a href="#dropdown" class="underline text-gray-500">Dropdown</a></div>
+                    <div> <a href="#flex-sizing" class="underline text-gray-500">Flex & Sizing</a></div>
+                    <div> <a href="#responsive" class="underline text-gray-500">Responsive Visibility</a></div>
+                    <div> <a href="#colors" class="underline text-gray-500">Colors</a></div>
+                    <div> <a href="#shadows" class="underline text-gray-500">Shadows</a></div>
+                    <div> <a href="#borders" class="underline text-gray-500">Borders</a></div>
                 </div>
 
                 <div id="introduction" class="mt-4">
@@ -207,6 +207,7 @@
                     <div class="example">
                         <div class="flex items-center gap-2" style="flex-wrap: wrap;">
                             <button>Primary</button>
+                            <button class="outline">Outline</button>
                             <button class="secondary">Secondary</button>
                             <button class="destructive">Destructive</button>
                             <button class="ghost">Ghost</button>
@@ -214,6 +215,7 @@
                         </div>
                     </div>
                     <pre><code class="language-html">&lt;button&gt;Primary&lt;/button&gt;
+&lt;button class="outline"&gt;Outline&lt;/button&gt;
 &lt;button class="secondary"&gt;Secondary&lt;/button&gt;
 &lt;button class="destructive"&gt;Destructive&lt;/button&gt;
 &lt;button class="ghost"&gt;Ghost&lt;/button&gt;
@@ -225,7 +227,11 @@
                     <p>Styles for inputs, textareas, selects, and floating labels.</p>
                     <div class="example">
                         <input type="text" placeholder="Standard Input">
+                        <input type="text" class="fill mt-4" placeholder="Fill Input">
                         <select class="mt-4">
+                            <option>Select Menu</option>
+                        </select>
+                           <select class="mt-4 fill">
                             <option>Select Menu</option>
                         </select>
                         <textarea class="mt-4" placeholder="Textarea" rows="3"></textarea>
@@ -235,13 +241,17 @@
                         </div>
                     </div>
                     <pre><code class="language-html">&lt;input type="text" placeholder="Standard Input"&gt;
+&lt;input class="fill" type="text" placeholder="Fill Input"&gt;
 &lt;select&gt;...&lt;/select&gt;
+&lt;select class="fill" &gt;...&lt;/select&gt;
 &lt;textarea placeholder="Textarea"&gt;&lt;/textarea&gt;
 
 &lt;div class="floating"&gt;
   &lt;input type="email" id="float" placeholder=" " /&gt;
   &lt;label for="float"&gt;Floating Label&lt;/label&gt;
 &lt;/div&gt;</code></pre>
+
+
                 </div>
 
                 <div id="typography">
