@@ -70,7 +70,7 @@ code { background-color: var(--gray-100); padding: 0.2em 0.4em; margin: 0; font-
 [data-theme="dark"] code { background-color: var(--gray-700); }
 kbd { background-color: var(--gray-200); border: 1px solid var(--gray-300); border-bottom-width: 2px; padding: 0.2em 0.4em; border-radius: 3px; font-family: monospace; }
 mark { background-color: var(--yellow-200); color: var(--yellow-900); padding: 0.1em 0.3em; border-radius: 3px; }
-
+li { list-style: none; padding-left: 0;margin-left: 0;}
 /* --- Layout --- */
 .container { width: 100%; max-width: 1120px; margin: 0 auto; padding: 0 1rem; }
 header, footer { padding: 1rem 0; }
