@@ -156,6 +156,7 @@ progress::-webkit-progress-value { background-color: var(--primary); }
 .text-error { color: var(--text-error) !important; }
 
 /* --- General Utilities --- */
+.underline {text-decoration: underline;}
 .hidden { display: none !important; }
 .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
 .cols-2 { grid-template-columns: repeat(2, 1fr) !important; } .cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
