@@ -60,7 +60,8 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 html { scroll-behavior: smooth; }
 body { font-family: var(--font-family); background-color: var(--background); color: var(--on-background); line-height: 1.6; display: flex; flex-direction: column; min-height: 100vh; }
-a { color: var(--primary); text-decoration: none; transition: color .2s ease; }
+a { padding: 0.5rem 1rem;border-radius: var(--border-radius);color: var(--text-secondary);   text-decoration: none; transition: color .2s ease; }
+a:hover{ background-color: var(--gray-100)};   
 a:hover { text-decoration: underline; }
 h1, h2, h3, h4, h5, h6 { margin-top: 0; margin-bottom: 0.75em; font-weight: 600; line-height: 1.2; color: var(--text-primary); }
 p, ul, ol { margin-bottom: 1em; }
