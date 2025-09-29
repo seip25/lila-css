@@ -4,6 +4,7 @@
 */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
 :root {
     /* Color Palettes */
     --gray-50: #f9fafb; --gray-100: #f3f4f6; --gray-200: #e5e7eb; --gray-300: #d1d5db; --gray-400: #9ca3af; --gray-500: #6b7280; --gray-600: #4b5563; --gray-700: #374151; --gray-800: #1f2937; --gray-900: #111827;
@@ -115,15 +116,11 @@ input[type="checkbox"]:checked::after {  content: "✓";  color: var(--on-primar
 input[type="radio"] {  border-radius: 50%;}input[type="radio"]:checked {  background-color: var(--primary);border-color: var(--primary);}
 input[type="radio"]:checked::after {  content: "";  width: 0.5rem;  height: 0.5rem;  background: var(--on-primary);border-radius: 50%; position: absolute;  top: 3px;  left: 3px;}
 /* --- Dropdowns & Dialogs --- */
-.dropdown { position: relative; display: inline-block; }
-.dropdown-toggle::after { content: '▾'; margin-left: 0.5rem; }
+.dropdown { position: relative; display: inline-block; }.dropdown-toggle::after { content: '▾'; margin-left: 0.5rem; }
 .dropdown-content { display: none; position: absolute; background-color: var(--surface); min-width: 200px; box-shadow: var(--shadow-md); border-radius: var(--border-radius); z-index: 1000; padding: .5rem 0; border: 1px solid var(--border-color); }
-.dropdown:hover .dropdown-content { display: block; }
-.dropdown-content.right { right: 0; }
-.dropdown-item { display: block; padding: .75rem 1rem; color: var(--on-surface); }
-.dropdown-item:hover { background-color: var(--gray-100); }
+.dropdown:hover .dropdown-content { display: block; }.dropdown-content.right { right: 0; }.dropdown-item { display: block; padding: .75rem 1rem; color: var(--on-surface); }.dropdown-item:hover { background-color: var(--gray-100); }
 [data-theme="dark"] .dropdown-item:hover { background-color: var(--gray-700); }
-dialog {  border: none;  border-radius: var(--border-radius);  padding: 0;  background: transparent;margin: auto;  width: 100%;  max-width: 100vw; }
+.dropdown-content.bottom{top:100%;left:0;}.dropdown-content.top,.dropdown-content.up{bottom:100%;left:0;}.dropdown-content.left{top:0;right:100%;}.dropdown-content.right{top:0;left:100%;}.dropdown-content.up-right,.dropdown-content.top-right{bottom:100%;right:0;}.dropdown-content.up-left,.dropdown-content.top-left{bottom:100%;left:0;}.dropdown-content.bottom-left{top:100%;left:0;}.dropdown-content.bottom-right{top:100%;right:0;}dialog{border:none;border-radius:var(--border-radius);padding:0;background:transparent;margin:auto;width:100%;max-width:100vw;}
 @media (min-width: 1024px) {  dialog {    max-width: 75%;  }}
 dialog { border: none; border-radius: var(--border-radius); padding: 0; background: transparent; max-width: 75vw; margin: auto; }
 dialog::backdrop { background: rgba(0, 0, 0, 0.5); backdrop-filter: blur(3px); }
@@ -225,6 +222,7 @@ progress::-webkit-progress-value { background-color: var(--primary); }
 .w-90  { width: 90%; }.w-95  { width: 95%; }.w-100 { width: 100%; }
 .w-50-px{width:50px;}.w-100-px{width:100px;}.w-150-px{width:150px;}.w-200-px{width:200px;}.w-250-px{width:250px;}.w-300-px{width:300px;}.w-350-px{width:350px;}.w-400-px{width:400px;}.w-450-px{width:450px;}.w-500-px{width:500px;}.w-550-px{width:550px;}.w-600-px{width:600px;}.w-650-px{width:650px;}.w-700-px{width:700px;}.w-750-px{width:750px;}.w-800-px{width:800px;}.w-850-px{width:850px;}.w-900-px{width:900px;}.w-950-px{width:950px;}.w-1000-px{width:1000px;}.w-1050-px{width:1050px;}.w-1100-px{width:1100px;}.w-1150-px{width:1150px;}.w-1200-px{width:1200px;}
 .w-mx-50-px{max-width:50px;}.w-mx-100-px{max-width:100px;}.w-mx-150-px{max-width:150px;}.w-mx-200-px{max-width:200px;}.w-mx-250-px{max-width:250px;}.w-mx-300-px{max-width:300px;}.w-mx-350-px{max-width:350px;}.w-mx-400-px{max-width:400px;}.w-mx-450-px{max-width:450px;}.w-mx-500-px{max-width:500px;}.w-mx-550-px{max-width:550px;}.w-mx-600-px{max-width:600px;}.w-mx-650-px{max-width:650px;}.w-mx-700-px{max-width:700px;}.w-mx-750-px{max-width:750px;}.w-mx-800-px{max-width:800px;}.w-mx-850-px{max-width:850px;}.w-mx-900-px{max-width:900px;}.w-mx-950-px{max-width:950px;}.w-mx-1000-px{max-width:1000px;}.w-mx-1050-px{max-width:1050px;}.w-mx-1100-px{max-width:1100px;}.w-mx-1150-px{max-width:1150px;}.w-mx-1200-px{max-width:1200px;}
+.h-mx-50-px{max-height:50px;}.h-mx-100-px{max-height:100px;}.h-mx-150-px{max-height:150px;}.h-mx-200-px{max-height:200px;}.h-mx-250-px{max-height:250px;}.h-mx-300-px{max-height:300px;}.h-mx-350-px{max-height:350px;}.h-mx-400-px{max-height:400px;}.h-mx-450-px{max-height:450px;}.h-mx-500-px{max-height:500px;}.h-mx-550-px{max-height:550px;}.h-mx-600-px{max-height:600px;}.h-mx-650-px{max-height:650px;}.h-mx-700-px{max-height:700px;}.h-mx-750-px{max-height:750px;}.h-mx-800-px{max-height:800px;}.h-mx-850-px{max-height:850px;}.h-mx-900-px{max-height:900px;}.h-mx-950-px{max-height:950px;}.h-mx-1000-px{max-height:1000px;}
 .rounded { border-radius: var(--border-radius); } .rounded-lg { border-radius: var(--border-radius-lg); } .rounded-full { border-radius: 9999px; }
 .shadow {box-shadow : var(--shadow)} .shadow-none{box-shadow: none !important;} .shadow-md {box-shadow : var(--shadow-md)}
 [data-theme="dark"] .shadow {box-shadow : 0 1px 1px 0 rgb(255 255 255 / 0.1)} [data-theme="dark"] .shadow-md {box-shadow : 0 1px 2px -1px rgb(255 255 255 / 0.1), 0 1px 2px -2px rgb(255 255 255 / 0.1);}
@@ -250,7 +248,7 @@ progress::-webkit-progress-value { background-color: var(--primary); }
 .bottom-25 { bottom: 25px; }.left-25 { left: 25px; }.right-25 { right: 25px; }.top-25 { top: 25px; }.bottom-50 { bottom: 50px; }.left-50 { left: 50px; }.right-50 { right: 50px; }.top-50 { top: 50px; }
 .bottom-75 { bottom: 75px; }.left-75 { left: 75px; }.right-75 { right: 75px; }.top-75 { top: 75px; }.bottom-100 { bottom: 100px; }.left-100 { left: 100px; }.right-100 { right: 100px; }.top-100 { top: 100px; }
 .cursor-pointer { cursor: pointer; }.cursor-default { cursor: default; }.cursor-not-allowed { cursor: not-allowed; }.select-none { user-select: none; }.select-text { user-select: text; }.select-all { user-select: all; }.select-auto { user-select: auto; }
-
+.min-h-screen{min-height:100vh;}
 /* --- Responsive Visibility --- */
 @media (max-width: 640px) { .hidden-sm { display: none !important; } }
 @media (min-width: 641px) and (max-width: 1024px) { .hidden-md { display: none !important; } }
