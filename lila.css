@@ -80,6 +80,8 @@ article, section, .card { background-color: var(--background); border: 1px solid
 small { font-size: 0.875rem; color: var(--text-muted); }
 hr { border: none; border-top: 1px solid var(--border-color); margin: 2rem 0; }
 img { max-width: 100%; height: auto; display: block; border-radius: var(--border-radius); }
+p,li,span,blockquote,td,th { white-space: normal;overflow-wrap: break-word;  word-wrap: break-word;  hyphens: auto;}
+code,pre {white-space: pre-wrap;overflow-wrap: break-word;word-break: break-word;}
 /* --- Buttons --- */
 button, .button { padding: 0.6rem 1.2rem; border-radius: var(--border-radius); font-weight: 500; cursor: pointer; transition: all .2s ease; border: 1px solid transparent; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; font-family: var(--font-family); }
 button:active, .button:active { transform: scale(0.98); }
