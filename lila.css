@@ -117,7 +117,7 @@ input[type="checkbox"]:checked {  background-color: var(--primary);border-color:
 input[type="checkbox"]:checked::after {  content: "✓";  color: var(--on-primary);  font-size: 0.8rem;  position: absolute;  top: 0;left: 2px;}
 input[type="radio"] {  border-radius: 50%;}input[type="radio"]:checked {  background-color: var(--primary);border-color: var(--primary);}
 input[type="radio"]:checked::after {  content: "";  width: 0.5rem;  height: 0.5rem;  background: var(--on-primary);border-radius: 50%; position: absolute;  top: 3px;  left: 3px;}
-input[type="checkbox"]::checked {  background-color: var(--primary);  border-color: var(--primary);}label> input[type="checkbox"][role="switch"] { margin-top: 0.75rem; appearance: none;  -webkit-appearance: none;  -moz-appearance: none;  width: 3rem;  height: 1.5rem;  border-radius: 9999px;  background-color: var(--gray-300);  position: relative;  vertical-align: middle;  transition: background-color .2s ease;}
+input[type="checkbox"]:checked {  background-color: var(--primary);  border-color: var(--primary);}label> input[type="checkbox"][role="switch"] { margin-top: 0.75rem; appearance: none;  -webkit-appearance: none;  -moz-appearance: none;  width: 3rem;  height: 1.5rem;  border-radius: 9999px;  background-color: var(--gray-300);  position: relative;  vertical-align: middle;  transition: background-color .2s ease;}
 [data-theme="dark"] label> input[type="checkbox"][role="switch"] { background-color: var(--gray-600); }
 label> input[type="checkbox"][role="switch"]::after {  content: "";  position: absolute;  top: 3px;  left: 3px;  width: 1rem;  height: 1rem;  background-color: var(--background);  border-radius: 50%;  transition: transform .2s ease;}
 label> input[type="checkbox"][role="switch"]:checked {  background-color: var(--primary);  border-color: var(--primary);}
@@ -222,7 +222,7 @@ aside h4, aside h3,aside h2, aside h1, aside h5,aside h6 {padding: 0 1rem;margin
 .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); }
 .cols-2 { grid-template-columns: repeat(2, 1fr) !important; } .cols-3 { grid-template-columns: repeat(3, 1fr) !important; }
 .gap-1{gap:.25rem}.gap-2{gap:.5rem}.gap-3{gap:.75rem}.gap-4{gap:1rem}
-.mt-1 { margin-top: .25rem; }.mt-2 { margin-top: .5rem; }.mt-3 { margin-top: .75rem; }.mt-4 { margin-top: 1rem; }.mt-auto { margin-top: auto; }
+.mt-1 { margin-top: .25rem; }.mt-2 { margin-top: .5rem; }.mt-3 { margin-top: .75rem; }.mt-4 { margin-top: 1rem; }.mt-8{margin-top: 2rem;}.mt-auto { margin-top: auto; }
 .mb-1 { margin-bottom: .25rem; }.mb-2 { margin-bottom: .5rem; }.mb-3 { margin-bottom: .75rem; }.mb-4 { margin-bottom: 1rem; }.mb-auto { margin-bottom: auto; }
 .p-1 { padding: .25rem; }.p-2 { padding: .5rem; }.p-3 { padding: .75rem; }.p-4 { padding: 1rem; }.p-auto { padding: auto; }
 /* --- Width Utilities --- */
