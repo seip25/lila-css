@@ -20,6 +20,7 @@
     --surface: var(--gray-50);
     --primary: var(--gray-900);
     --secondary: var(--gray-100);
+    --outline: var(--gray-300);
     --destructive: var(--red-600);
     --on-primary: #ffffff;
     --on-secondary: var(--gray-900);
@@ -42,6 +43,7 @@
     --background: var(--gray-900);
     --surface: var(--gray-800);
     --primary: var(--gray-50);
+    --outline : var(--gray-700);
     --secondary: var(--gray-800);
     --destructive: var(--red-500);
     --on-primary: var(--gray-900);
@@ -96,7 +98,7 @@ button.ghost:hover { background-color: var(--gray-100); }
 [data-theme="dark"] button.ghost:hover { background-color: var(--gray-800); }
 button.fill { background-color: var(--gray-100); color: var(--text-primary); }
 [data-theme="dark"] button.fill { background-color: var(--gray-800); }
-button.outline {  background-color: transparent;color: var(--primary);  border: 1px solid var(--primary);}
+button.outline {  background-color: transparent;color: var(--primary);  border: 1px  solid var(--outline);}
 button.outline:hover {  background-color: var(--primary); color: var(--on-primary);}
 
 /* --- Forms --- */
@@ -123,6 +125,7 @@ label> input[type="checkbox"][role="switch"]::after {  content: "";  position: a
 label> input[type="checkbox"][role="switch"]:checked {  background-color: var(--primary);  border-color: var(--primary);}
 label> input[type="checkbox"][role="switch"]:checked::after {  transform: translateX(1.5rem);}
 label> input[type="checkbox"][role="switch"]:disabled {  opacity: 0.5;  cursor: not-allowed;}
+label {color: var(--primary)}
 /* --- Dropdowns & Dialogs --- */
 .dropdown { position: relative; display: inline-block; }.dropdown-toggle::after { content: '▾'; margin-left: 0.5rem; }
 .dropdown-content { display: none; position: absolute; background-color: var(--surface); min-width: 200px; box-shadow: var(--shadow-md); border-radius: var(--border-radius); z-index: 1000; padding: .5rem 0; border: 1px solid var(--border-color); }
