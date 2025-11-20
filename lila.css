@@ -787,6 +787,7 @@ progress::-webkit-progress-value {
 }
 
 aside {
+  padding-right: 8rem !important;
   position: sticky;
   top: 1.5rem;
   height: calc(100vh - 3rem);
