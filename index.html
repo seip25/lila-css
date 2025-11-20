@@ -17,19 +17,19 @@
     <meta property="og:description"
         content="Discover Lila CSS: a modern CSS framework with semantic classes, responsive utilities, and easy-to-use components.">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://seip25.github.io/lila-css/"> 
+    <meta property="og:url" content="https://seip25.github.io/lila-css/">
 
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Lila CSS - Lightweight Modern CSS Framework">
     <meta name="twitter:description"
         content="Lila CSS is a semantic, lightweight, and modern CSS framework inspired by Pico.css and shadcn/ui.">
- 
+
 
     <!-- Canonical -->
     <link rel="canonical" href="https://seip25.github.io/lila-css/">
 
-  <link rel="icon" type="image/png" href="lila.png" alt="Lila CSS Framework Logo" />
+    <link rel="icon" type="image/png" href="lila.png" alt="Lila CSS Framework Logo" />
     <!-- Styles -->
     <link rel="stylesheet" href="lila.css" />
     <link rel="stylesheet"
@@ -39,6 +39,7 @@
         body {
             scroll-padding-top: 2rem;
         }
+
         pre {
             background-color: #282c34;
             border-radius: var(--border-radius);
@@ -48,6 +49,7 @@
             color: #abb2bf;
             font-family: monospace;
         }
+
         .example {
             border: 1px solid var(--border-color);
             padding: 1.5rem;
@@ -112,10 +114,11 @@
                 <a href="#colors">Colors</a>
                 <a href="#shadows">Shadows</a>
                 <a href="#borders">Borders</a>
+                <a href="#bottom-nav-doc">Bottom nav</a>
             </aside>
 
             <div>
-                <div class="grid  gap-4 visible-sm">
+                <div class="grid cols-2 text-center gap-4 visible-sm">
                     <div> <a href="#introduction" class="text-gray-500">Introduction</a></div>
                     <div> <a href="#install" class="text-gray-500">Install</a></div>
                     <div><a href="#buttons" class="text-gray-500">Buttons</a></div>
@@ -134,6 +137,7 @@
                     <div> <a href="#colors" class="text-gray-500">Colors</a></div>
                     <div> <a href="#shadows" class="text-gray-500">Shadows</a></div>
                     <div> <a href="#borders" class="text-gray-500">Borders</a></div>
+                    <div> <a href="#bottom-nav-doc" class="text-gray-500">Bottom nav</a></div>
                 </div>
 
                 <div id="introduction" class="mt-4 ">
@@ -198,10 +202,10 @@
                         </div>
 
                         <div class="mt-4">
-                            <label  >
-                                <input type="checkbox" name="switch" role="switch"  >
+                            <label>
+                                <input type="checkbox" name="switch" role="switch">
                                 My switch
-                              </label>
+                            </label>
                         </div>
                     </div>
                     <pre><code class="language-html">&lt;input type="text" placeholder="Standard Input"&gt;
@@ -704,40 +708,68 @@ My switch
                         </div>
                         <div class="card bg-violet-900 text-center">
                             <p class="text-violet-50">900</p>
-                        </div> 
-               
+                        </div>
+
                     </div>
 
-                <div id="shadows">
-                    <h2>Shadows</h2>
-                    <p>Apply shadows using the <code>.shadow</code> class or CSS variables for more control.</p>
-                    <div class="example">
-                        <div class="grid cols-2 gap-4">
-                            <div class="card shadow text-center">.shadow</div>
-                            <div class="card text-center" style="box-shadow: var(--shadow-md);">shadow-md</div>
+                    <div id="shadows">
+                        <h2>Shadows</h2>
+                        <p>Apply shadows using the <code>.shadow</code> class or CSS variables for more control.</p>
+                        <div class="example">
+                            <div class="grid cols-2 gap-4">
+                                <div class="card shadow text-center">.shadow</div>
+                                <div class="card text-center" style="box-shadow: var(--shadow-md);">shadow-md</div>
+                            </div>
                         </div>
-                    </div>
-                    <pre><code class="language-html">&lt;div class="shadow"&gt;...&lt;/div&gt;
+                        <pre><code class="language-html">&lt;div class="shadow"&gt;...&lt;/div&gt;
 &lt;div style="box-shadow: var(--shadow-md);"&gt;...&lt;/div&gt;</code></pre>
-                </div>
-
-                <div id="borders">
-                    <h2>Borders</h2>
-                    <p>Control border-radius and add borders with utility classes.</p>
-                    <div class="example">
-                        <div class="grid cols-4 gap-4">
-                            <div class="card text-center">default</div>
-                            <div class="card text-center rounded-lg">.rounded-lg</div>
-                            <div class="card text-center rounded-full">.rounded-full</div>
-                            <div class="bg-surface border rounded text-center p-4">.border</div>
-                        </div>
                     </div>
-                    <pre><code class="language-html">&lt;div class="rounded-lg"&gt;...&lt;/div&gt;
-&lt;div class="border"&gt;...&lt;/div&gt;</code></pre>
-                </div>
 
+                    <div id="borders">
+                        <h2>Borders</h2>
+                        <p>Control border-radius and add borders with utility classes.</p>
+                        <div class="example">
+                            <div class="grid cols-4 gap-4">
+                                <div class="card text-center">default</div>
+                                <div class="card text-center rounded-lg">.rounded-lg</div>
+                                <div class="card text-center rounded-full">.rounded-full</div>
+                                <div class="bg-surface border rounded text-center p-4">.border</div>
+                            </div>
+                        </div>
+                        <pre><code class="language-html">&lt;div class="rounded-lg"&gt;...&lt;/div&gt;
+&lt;div class="border"&gt;...&lt;/div&gt;</code></pre>
+                    </div>
+
+                    <div id="bottom-nav-doc">
+                        <h2>Bottom Navigation Bar</h2>
+                        <p>
+                            A mobile-friendly bottom navigation bar that stays fixed to the bottom of the page.
+                            Useful for mobile layouts or Progressive Web Apps.
+                            You may combine it with the <code>visible-sm</code> utility class
+                            to show it <strong>only on small screens</strong>, or remove it to display the bar
+                            everywhere.
+                        </p>
+
+                     
+
+                        <pre><code class="language-html">&lt;nav class="bottom-nav visible-sm"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="/search"&gt;Search&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/cart"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/account"&gt;Account&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+
+                        <p>
+                            The <code>visible-sm</code> class ensures the bar only appears on small screens.
+                            Remove the class if you want the bottom nav to be visible at all screen sizes.
+                        </p>
+                    </div>
+
+
+                </div>
             </div>
-        </div>
     </main>
 
     <footer class="container" style="text-align: center; margin-top: 2rem;">
@@ -758,4 +790,5 @@ My switch
         const dialogFull = document.getElementById('dialogFull');
     </script>
 </body>
+
 </html>
