@@ -94,12 +94,13 @@
   --text-muted: var(--gray-500);
   --text-success: var(--green-600);
   --text-error: var(--red-600);
-  --border-color: var(--gray-200);
+  --border : 1px solid  var(--gray-200);
   --border-radius: 0.5rem;
   --border-radius-lg: 0.75rem;
   --shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --font-family: 'Inter', sans-serif;
+  --border-color : var(--gray-100);
 }
 
 [data-theme="dark"] {
@@ -118,7 +119,8 @@
   --text-muted: var(--gray-500);
   --text-success: var(--green-400);
   --text-error: var(--red-400);
-  --border-color: var(--gray-700);
+  --border : 1px solid  var(--gray-700);
+  --border-color : var(--gray-800);
 }
 
 /* --- Base & Semantic Styles --- */
@@ -326,7 +328,7 @@ button:hover {
 button.secondary {
   background-color: var(--secondary);
   color: var(--on-secondary);
-  border-color: var(--border-color);
+  border : 1px solid  var(--border-color);
 }
 
 button.secondary:hover {
@@ -345,7 +347,7 @@ button.destructive {
 button.ghost {
   background-color: transparent;
   color: var(--text-primary);
-  border-color: transparent;
+  border : 1px solid  transparent;
 }
 
 button.ghost:hover {
@@ -401,7 +403,7 @@ textarea {
 input:focus,
 textarea:focus,
 select:focus {
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
   box-shadow: 0 0 0 1px var(--primary);
 }
 
@@ -409,7 +411,7 @@ input.fill,
 textarea.fill,
 select.fill {
   background-color: var(--gray-100);
-  border-color: transparent;
+  border : 1px solid  transparent;
   color: var(--text-primary);
 }
 
@@ -417,14 +419,14 @@ select.fill {
 [data-theme="dark"] textarea.fill,
 [data-theme="dark"] select.fill {
   background-color: var(--gray-800);
-  border-color: transparent;
+  border : 1px solid  transparent;
   color: var(--text-primary);
 }
 
 input.fill:focus,
 textarea.fill:focus,
 select.fill:focus {
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
   box-shadow: 0 0 0 1px var(--primary);
 }
 
@@ -435,12 +437,12 @@ select[aria-describedby] {
 
 select[aria-label]:focus,
 select[aria-describedby]:focus {
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
   box-shadow: 0 0 0 1px var(--primary);
 }
 
 select[aria-invalid="true"] {
-  border-color: var(--text-error);
+  border : 1px solid  var(--text-error);
 }
 
 select[aria-invalid="true"]:focus {
@@ -498,7 +500,7 @@ input[type="radio"] {
 
 input[type="checkbox"]:checked {
   background-color: var(--primary);
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
 }
 
 input[type="checkbox"]:checked::after {
@@ -516,7 +518,7 @@ input[type="radio"] {
 
 input[type="radio"]:checked {
   background-color: var(--primary);
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
 }
 
 input[type="radio"]:checked::after {
@@ -532,7 +534,7 @@ input[type="radio"]:checked::after {
 
 input[type="checkbox"]:checked {
   background-color: var(--primary);
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
 }
 
 label>input[type="checkbox"][role="switch"] {
@@ -567,7 +569,7 @@ label>input[type="checkbox"][role="switch"]::after {
 
 label>input[type="checkbox"][role="switch"]:checked {
   background-color: var(--primary);
-  border-color: var(--primary);
+  border : 1px solid  var(--primary);
 }
 
 label>input[type="checkbox"][role="switch"]:checked::after {
@@ -3046,367 +3048,367 @@ aside h6 {
 }
  
 .border-red {
-  border-color: var(--red-500);
+  border : 1px solid  var(--red-500);
 }
 .border-blue {
-  border-color: var(--blue-500);
+  border : 1px solid  var(--blue-500);
 }
 .border-green {
-  border-color: var(--green-500);
+  border : 1px solid  var(--green-500);
 }
 .border-yellow {
-  border-color: var(--yellow-500);
+  border : 1px solid  var(--yellow-500);
 }
 .border-pink {
-  border-color: var(--pink-500);
+  border : 1px solid  var(--pink-500);
 }
 .border-purple {
-  border-color: var(--purple-500);
+  border : 1px solid  var(--purple-500);
 }
 .border-orange {
-  border-color: var(--orange-500);
+  border : 1px solid  var(--orange-500);
 }
 .border-violet {
-  border-color: var(--violet-500);
+  border : 1px solid  var(--violet-500);
 }
 .border-indigo {
-  border-color: var(--indigo-500);
+  border : 1px solid  var(--indigo-500);
 }
 .border-blue {
-  border-color: var(--blue-500);
+  border : 1px solid  var(--blue-500);
 }
 .border-gray {
-  border-color: var(--gray-500);
+  border : 1px solid  var(--gray-500);
 }
 .border-red-50 {
-  border-color: var(--red-50);
+  border : 1px solid  var(--red-50);
 }
 .border-blue-50 {
-  border-color: var(--blue-50);
+  border : 1px solid  var(--blue-50);
 }
 .border-green-50 {
-  border-color: var(--green-50);
+  border : 1px solid  var(--green-50);
 }
 .border-yellow-50 {
-  border-color: var(--yellow-50);
+  border : 1px solid  var(--yellow-50);
 }
 .border-pink-50 {
-  border-color: var(--pink-50);
+  border : 1px solid  var(--pink-50);
 }
 .border-purple-50 {
-  border-color: var(--purple-50);
+  border : 1px solid  var(--purple-50);
 }
 .border-orange-50 {
-  border-color: var(--orange-50);
+  border : 1px solid  var(--orange-50);
 }
 .border-violet-50 {
-  border-color: var(--violet-50);
+  border : 1px solid  var(--violet-50);
 }
 .border-indigo-50 {
-  border-color: var(--indigo-50);
+  border : 1px solid  var(--indigo-50);
 }
 .border-blue-50 {
-  border-color: var(--blue-50);
+  border : 1px solid  var(--blue-50);
 }
 .border-gray-50 {
-  border-color: var(--gray-50);
+  border : 1px solid  var(--gray-50);
 }
 .border-red-100 {
-  border-color: var(--red-100);
+  border : 1px solid  var(--red-100);
 }
 .border-blue-100 {
-  border-color: var(--blue-100);
+  border : 1px solid  var(--blue-100);
 }
 .border-green-100 {
-  border-color: var(--green-100);
+  border : 1px solid  var(--green-100);
 }
 .border-yellow-100 {
-  border-color: var(--yellow-100);
+  border : 1px solid  var(--yellow-100);
 }
 .border-pink-100 {
-  border-color: var(--pink-100);
+  border : 1px solid  var(--pink-100);
 }
 .border-purple-100 {
-  border-color: var(--purple-100);
+  border : 1px solid  var(--purple-100);
 }
 .border-orange-100 {
-  border-color: var(--orange-100);
+  border : 1px solid  var(--orange-100);
 }
 .border-violet-100 {
-  border-color: var(--violet-100);
+  border : 1px solid  var(--violet-100);
 }
 .border-indigo-100 {
-  border-color: var(--indigo-100);
+  border : 1px solid  var(--indigo-100);
 }
 .border-blue-100 {
-  border-color: var(--blue-100);
+  border : 1px solid  var(--blue-100);
 }
 .border-gray-100 {
-  border-color: var(--gray-100);
+  border : 1px solid  var(--gray-100);
 }
 .border-red-200 {
-  border-color: var(--red-200);
+  border : 1px solid  var(--red-200);
 }
 .border-blue-200 {
-  border-color: var(--blue-200);
+  border : 1px solid  var(--blue-200);
 }
 .border-green-200 {
-  border-color: var(--green-200);
+  border : 1px solid  var(--green-200);
 }
 .border-yellow-200 {
-  border-color: var(--yellow-200);
+  border : 1px solid  var(--yellow-200);
 }
 .border-pink-200 {
-  border-color: var(--pink-200);
+  border : 1px solid  var(--pink-200);
 }
 .border-purple-200 {
-  border-color: var(--purple-200);
+  border : 1px solid  var(--purple-200);
 }
 .border-orange-200 {
-  border-color: var(--orange-200);
+  border : 1px solid  var(--orange-200);
 }
 .border-violet-200 {
-  border-color: var(--violet-200);
+  border : 1px solid  var(--violet-200);
 }
 .border-indigo-200 {
-  border-color: var(--indigo-200);
+  border : 1px solid  var(--indigo-200);
 }
 .border-blue-200 {
-  border-color: var(--blue-200);
+  border : 1px solid  var(--blue-200);
 }
 .border-gray-200 {
-  border-color: var(--gray-200);
+  border : 1px solid  var(--gray-200);
 }
 .border-red-300 {
-  border-color: var(--red-300);
+  border : 1px solid  var(--red-300);
 }
 .border-blue-300 {
-  border-color: var(--blue-300);
+  border : 1px solid  var(--blue-300);
 }
 .border-green-300 {
-  border-color: var(--green-300);
+  border : 1px solid  var(--green-300);
 }
 .border-yellow-300 {
-  border-color: var(--yellow-300);
+  border : 1px solid  var(--yellow-300);
 }
 .border-pink-300 {
-  border-color: var(--pink-300);
+  border : 1px solid  var(--pink-300);
 }
 .border-purple-300 {
-  border-color: var(--purple-300);
+  border : 1px solid  var(--purple-300);
 }
 .border-orange-300 {
-  border-color: var(--orange-300);
+  border : 1px solid  var(--orange-300);
 }
 .border-violet-300 {
-  border-color: var(--violet-300);
+  border : 1px solid  var(--violet-300);
 }
 .border-indigo-300 {
-  border-color: var(--indigo-300);
+  border : 1px solid  var(--indigo-300);
 }
 .border-blue-300 {
-  border-color: var(--blue-300);
+  border : 1px solid  var(--blue-300);
 }
 .border-gray-300 {
-  border-color: var(--gray-300);
+  border : 1px solid  var(--gray-300);
 }
 .border-red-400 {
-  border-color: var(--red-400);
+  border : 1px solid  var(--red-400);
 }
 .border-blue-400 {
-  border-color: var(--blue-400);
+  border : 1px solid  var(--blue-400);
 }
 .border-green-400 {
-  border-color: var(--green-400);
+  border : 1px solid  var(--green-400);
 }
 .border-yellow-400 {
-  border-color: var(--yellow-400);
+  border : 1px solid  var(--yellow-400);
 }
 .border-pink-400 {
-  border-color: var(--pink-400);
+  border : 1px solid  var(--pink-400);
 }
 .border-purple-400 {
-  border-color: var(--purple-400);
+  border : 1px solid  var(--purple-400);
 }
 .border-orange-400 {
-  border-color: var(--orange-400);
+  border : 1px solid  var(--orange-400);
 }
 .border-violet-400 {
-  border-color: var(--violet-400);
+  border : 1px solid  var(--violet-400);
 }
 .border-indigo-400 {
-  border-color: var(--indigo-400);
+  border : 1px solid  var(--indigo-400);
 }
 .border-blue-400 {
-  border-color: var(--blue-400);
+  border : 1px solid  var(--blue-400);
 }
 .border-gray-400 {
-  border-color: var(--gray-400);
+  border : 1px solid  var(--gray-400);
 }
 .border-red-500 {
-  border-color: var(--red-500);
+  border : 1px solid  var(--red-500);
 }
 .border-blue-500 {
-  border-color: var(--blue-500);
+  border : 1px solid  var(--blue-500);
 }
 .border-green-500 {
-  border-color: var(--green-500);
+  border : 1px solid  var(--green-500);
 }
 .border-yellow-500 {
-  border-color: var(--yellow-500);
+  border : 1px solid  var(--yellow-500);
 }
 .border-pink-500 {
-  border-color: var(--pink-500);
+  border : 1px solid  var(--pink-500);
 }
 .border-purple-500 {
-  border-color: var(--purple-500);
+  border : 1px solid  var(--purple-500);
 }
 .border-orange-500 {
-  border-color: var(--orange-500);
+  border : 1px solid  var(--orange-500);
 }
 .border-violet-500 {
-  border-color: var(--violet-500);
+  border : 1px solid  var(--violet-500);
 }
 .border-indigo-500 {
-  border-color: var(--indigo-500);
+  border : 1px solid  var(--indigo-500);
 }
 .border-blue-500 {
-  border-color: var(--blue-500);
+  border : 1px solid  var(--blue-500);
 }
 .border-gray-500 {
-  border-color: var(--gray-500);
+  border : 1px solid  var(--gray-500);
 }
 .border-red-600 {
-  border-color: var(--red-600);
+  border : 1px solid  var(--red-600);
 }
 .border-blue-600 {
-  border-color: var(--blue-600);
+  border : 1px solid  var(--blue-600);
 }
 .border-green-600 {
-  border-color: var(--green-600);
+  border : 1px solid  var(--green-600);
 }
 .border-yellow-600 {
-  border-color: var(--yellow-600);
+  border : 1px solid  var(--yellow-600);
 }
 .border-pink-600 {
-  border-color: var(--pink-600);
+  border : 1px solid  var(--pink-600);
 }
 .border-purple-600 {
-  border-color: var(--purple-600);
+  border : 1px solid  var(--purple-600);
 }
 .border-orange-600 {
-  border-color: var(--orange-600);
+  border : 1px solid  var(--orange-600);
 }
 .border-violet-600 {
-  border-color: var(--violet-600);
+  border : 1px solid  var(--violet-600);
 }
 .border-indigo-600 {
-  border-color: var(--indigo-600);
+  border : 1px solid  var(--indigo-600);
 }
 .border-blue-600 {
-  border-color: var(--blue-600);
+  border : 1px solid  var(--blue-600);
 }
 .border-gray-600 {
-  border-color: var(--gray-600);
+  border : 1px solid  var(--gray-600);
 }
 .border-red-700 {
-  border-color: var(--red-700);
+  border : 1px solid  var(--red-700);
 }
 .border-blue-700 {
-  border-color: var(--blue-700);
+  border : 1px solid  var(--blue-700);
 }
 .border-green-700 {
-  border-color: var(--green-700);
+  border : 1px solid  var(--green-700);
 }
 .border-yellow-700 {
-  border-color: var(--yellow-700);
+  border : 1px solid  var(--yellow-700);
 }
 .border-pink-700 {
-  border-color: var(--pink-700);
+  border : 1px solid  var(--pink-700);
 }
 .border-purple-700 {
-  border-color: var(--purple-700);
+  border : 1px solid  var(--purple-700);
 }
 .border-orange-700 {
-  border-color: var(--orange-700);
+  border : 1px solid  var(--orange-700);
 }
 .border-violet-700 {
-  border-color: var(--violet-700);
+  border : 1px solid  var(--violet-700);
 }
 .border-indigo-700 {
-  border-color: var(--indigo-700);
+  border : 1px solid  var(--indigo-700);
 }
 .border-blue-700 {
-  border-color: var(--blue-700);
+  border : 1px solid  var(--blue-700);
 }
 .border-gray-700 {
-  border-color: var(--gray-700);
+  border : 1px solid  var(--gray-700);
 }
 .border-red-800 {
-  border-color: var(--red-800);
+  border : 1px solid  var(--red-800);
 }
 .border-blue-800 {
-  border-color: var(--blue-800);
+  border : 1px solid  var(--blue-800);
 }
 .border-green-800 {
-  border-color: var(--green-800);
+  border : 1px solid  var(--green-800);
 }
 .border-yellow-800 {
-  border-color: var(--yellow-800);
+  border : 1px solid  var(--yellow-800);
 }
 .border-pink-800 {
-  border-color: var(--pink-800);
+  border : 1px solid  var(--pink-800);
 }
 .border-purple-800 {
-  border-color: var(--purple-800);
+  border : 1px solid  var(--purple-800);
 }
 .border-orange-800 {
-  border-color: var(--orange-800);
+  border : 1px solid  var(--orange-800);
 }
 .border-violet-800 {
-  border-color: var(--violet-800);
+  border : 1px solid  var(--violet-800);
 }
 .border-indigo-800 {
-  border-color: var(--indigo-800);
+  border : 1px solid  var(--indigo-800);
 }
 .border-blue-800 {
-  border-color: var(--blue-800);
+  border : 1px solid  var(--blue-800);
 }
 .border-gray-800 {
-  border-color: var(--gray-800);
+  border : 1px solid  var(--gray-800);
 }
 .border-red-900 {
-  border-color: var(--red-900);
+  border : 1px solid  var(--red-900);
 }
 .border-blue-900 {
-  border-color: var(--blue-900);
+  border : 1px solid  var(--blue-900);
 }
 .border-green-900 {
-  border-color: var(--green-900);
+  border : 1px solid  var(--green-900);
 }
 .border-yellow-900 {
-  border-color: var(--yellow-900);
+  border : 1px solid  var(--yellow-900);
 }
 .border-pink-900 {
-  border-color: var(--pink-900);
+  border : 1px solid  var(--pink-900);
 }
 .border-purple-900 {
-  border-color: var(--purple-900);
+  border : 1px solid  var(--purple-900);
 }
 .border-orange-900 {
-  border-color: var(--orange-900);
+  border : 1px solid  var(--orange-900);
 }
 .border-violet-900 {
-  border-color: var(--violet-900);
+  border : 1px solid  var(--violet-900);
 }
 .border-indigo-900 {
-  border-color: var(--indigo-900);
+  border : 1px solid  var(--indigo-900);
 }
 .border-blue-900 {
-  border-color: var(--blue-900);
+  border : 1px solid  var(--blue-900);
 }
 .border-gray-900 {
-  border-color: var(--gray-900);
+  border : 1px solid  var(--gray-900);
 }
 
 
