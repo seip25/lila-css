@@ -7,9 +7,9 @@
 
     <title>Lila CSS - Lightweight Modern CSS Framework</title>
     <meta name="description"
-        content="Lila CSS is a semantic, lightweight, and modern CSS framework inspired by Pico.css and shadcn/ui. Explore documentation, components, utilities, and responsive design tools.">
+        content="Lila CSS is a semantic, lightweight, and modern CSS framework inspired by Pico.css , Material Design and shadcn/ui. Explore documentation, components, utilities, and responsive design tools.">
     <meta name="keywords"
-        content="Lila CSS, CSS framework, lightweight CSS, semantic CSS, Pico.css alternative, modern CSS, responsive grid, UI components, CSS utilities, documentation">
+        content="Lila CSS, CSS framework, lightweight CSS, semantic CSS, Pico.css alternative, Material Design alternative, modern CSS, responsive grid, UI components, CSS utilities, documentation">
     <meta name="author" content="Lila CSS Project">
 
     <!-- Open Graph / Facebook -->
@@ -30,8 +30,8 @@
     <link rel="canonical" href="https://seip25.github.io/lila-css/">
 
     <link rel="icon" type="image/png" href="lila.png" alt="Lila CSS Framework Logo" />
-    <!-- Styles -->
-    <link rel="stylesheet" href="lila.css" />
+
+    <link rel="stylesheet" href="lila.css" id="theme-stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/atom-one-dark.min.css">
 
@@ -63,7 +63,7 @@
   "@context": "https://schema.org",
   "@type": "TechArticle",
   "headline": "Lila CSS - Lightweight Modern CSS Framework",
-  "description": "Lila CSS is a semantic, lightweight, and modern CSS framework inspired by Pico.css and shadcn/ui. Explore documentation, components, utilities, and responsive design tools.",
+  "description": "Lila CSS is a semantic, lightweight, and modern CSS framework inspired by Pico.css , Material Design and shadcn/ui. Explore documentation, components, utilities, and responsive design tools.",
   "author": {
     "@type": "Organization",
     "name": "Lila CSS Project"
@@ -80,7 +80,13 @@
     <header class="container">
         <nav>
             <h2 class="text-indigo-500">Lila CSS</h2>
-            <button class="fill" id="theme-toggle">Theme</button>
+            <div class="flex justify-around gap-4 items-center">
+                <select id="theme-selector" class="mt-4 ">
+                    <option value="lila.css">Default</option>
+                    <option value="material.css">Material</option>
+                </select>
+                <button class="fill" id="theme-toggle">Mode</button>
+            </div>
         </nav>
     </header>
 
@@ -103,7 +109,7 @@
                 <a href="#spacing">Spacing</a>
 
                 <h4>Components</h4>
-                <a href="#card">Card  Content Block</a>
+                <a href="#card">Card Content Block</a>
                 <a href="#accordion">Accordion</a>
                 <a href="#dialog">Dialog (Modal)</a>
                 <a href="#dropdown">Dropdown</a>
@@ -143,7 +149,8 @@
                 <div id="introduction" class="mt-4 ">
                     <article class="bg-surface border-none">
                         <h1 class="text-indigo-500">Lila CSS Framework</h1>
-                        <p class="text-secondary">A semantic, modern CSS framework inspired by Pico.css and shadcn/ui.
+                        <p class="text-secondary">A semantic, modern CSS framework inspired by Pico.css , Material
+                            Design and shadcn/ui.
                         </p>
                         <p>This documentation provides a complete guide to all the components and utilities available in
                             Lila CSS.</p>
@@ -156,7 +163,7 @@
                 </div>
                 <div id="install" class="mt-4">
                     <pre>
-                        <code class="language-html">
+                        <code class="language-html" id="html-link">
 &lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/lila.css" /&gt;
                         </code>
                     </pre>
@@ -381,8 +388,8 @@ My switch
                                 </header>
                                 <p>Dialog content goes here.</p>
                                 <footer class="flex between items-center">
-                                    <button class="fill" onclick="commonDialog.close()">Close</button>
-                                    <button onclick="commonDialog.close()">Send</button>
+                                    <button class="ghost" onclick="commonDialog.close()">Close</button>
+                                    <button onclick="commonDialog.close()" class="secondary">Send</button>
                                 </footer>
                             </article>
                         </dialog>
@@ -750,7 +757,7 @@ My switch
                             everywhere.
                         </p>
 
-                     
+
 
                         <pre><code class="language-html">&lt;nav class="bottom-nav visible-sm"&gt;
   &lt;ul&gt;
@@ -781,9 +788,18 @@ My switch
         hljs.highlightAll();
 
         const themeToggle = document.getElementById('theme-toggle');
+        const themeSelector = document.getElementById('theme-selector');
+        const themeStylesheet = document.getElementById('theme-stylesheet');
         const html = document.documentElement;
+        const htmlLink = document.getElementById('html-link');
         themeToggle.addEventListener('click', () => {
             html.setAttribute('data-theme', html.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
+        });
+
+        themeSelector.addEventListener('change', (e) => {
+            themeStylesheet.setAttribute('href', e.target.value);
+            htmlLink.innerHTML = `&lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/${e.target.value}.css" /&gt;`
+            hljs.highlightAll();
         });
 
         const commonDialog = document.getElementById('commonDialog');
