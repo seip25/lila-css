@@ -162,6 +162,12 @@
                     </footer>
                 </div>
                 <div id="install" class="mt-4">
+                    <div class="text-center">
+                        <h2>Install</h2>
+                        <p>Include the Lila CSS file in your HTML file.</p>
+                        <p>Or download the file and include it locally.</p>
+                        <button class="ghost" id="download-btn">Download</button>
+                    </div>
                     <pre>
                         <code class="language-html" id="html-link">
 &lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/lila.css" /&gt;
@@ -792,6 +798,7 @@ My switch
         const themeStylesheet = document.getElementById('theme-stylesheet');
         const html = document.documentElement;
         const htmlLink = document.getElementById('html-link');
+        const downloadBtn = document.getElementById('download-btn');
         themeToggle.addEventListener('click', () => {
             html.setAttribute('data-theme', html.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
         });
@@ -802,6 +809,16 @@ My switch
             hljs.highlightAll();
         });
 
+        downloadBtn.addEventListener('click', () => {
+            const cssFilePath = `${themeSelector.value}`;
+            const link = document.createElement('a');
+            link.href = cssFilePath;
+            link.download = `${themeSelector.value}.css`;
+            link.target = '_blank';
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        });
         const commonDialog = document.getElementById('commonDialog');
         const dialogFull = document.getElementById('dialogFull');
     </script>

@@ -1300,83 +1300,83 @@ aside h6 {
 }
 
 .text-indigo-50 {
-  color: var(--blue-50)
+  color: var(--indigo-50)
 }
 
 .text-indigo-100 {
-  color: var(--blue-100)
+  color: var(--indigo-100)
 }
 
 .text-indigo-200 {
-  color: var(--blue-200)
+  color: var(--indigo-200)
 }
 
 .text-indigo-300 {
-  color: var(--blue-300)
+  color: var(--indigo-300)
 }
 
 .text-indigo-400 {
-  color: var(--blue-400)
+  color: var(--indigo-400)
 }
 
 .text-indigo-500 {
-  color: var(--blue-500)
+  color: var(--indigo-500)
 }
 
 .text-indigo-600 {
-  color: var(--blue-600)
+  color: var(--indigo-600)
 }
 
 .text-indigo-700 {
-  color: var(--blue-700)
+  color: var(--indigo-700)
 }
 
 .text-indigo-800 {
-  color: var(--blue-800)
+  color: var(--indigo-800)
 }
 
 .text-indigo-900 {
-  color: var(--blue-900)
+  color: var(--indigo-900)
 }
 
 .bg-violet-50 {
-  background-color: var(--blue-50)
+  background-color: var(--violet-50)
 }
 
 .bg-violet-100 {
-  background-color: var(--blue-100)
+  background-color: var(--violet-100)
 }
 
 .bg-violet-200 {
-  background-color: var(--blue-200)
+  background-color: var(--violet-200)
 }
 
 .bg-violet-300 {
-  background-color: var(--blue-300)
+  background-color: var(--violet-300)
 }
 
 .bg-violet-400 {
-  background-color: var(--blue-400)
+  background-color: var(--violet-400)
 }
 
 .bg-violet-500 {
-  background-color: var(--blue-500)
+  background-color: var(--violet-500)
 }
 
 .bg-violet-600 {
-  background-color: var(--blue-600)
+  background-color: var(--violet-600)
 }
 
 .bg-violet-700 {
-  background-color: var(--blue-700)
+  background-color: var(--violet-700)
 }
 
 .bg-violet-800 {
-  background-color: var(--blue-800)
+  background-color: var(--violet-800)
 }
 
 .bg-violet-900 {
-  background-color: var(--blue-900)
+  background-color: var(--violet-900)
 }
 
 [data-theme="dark"] .bg-gray-50 {
