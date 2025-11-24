@@ -590,7 +590,7 @@ label>input[type="checkbox"][role="switch"]:disabled {
 }
 
 label {
-  color: var(--primary)
+  color: var(--gray-700) !important;
 }
 
 /* --- Dropdowns & Dialogs --- */
