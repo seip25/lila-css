@@ -696,6 +696,21 @@ dialog {
     max-width: 75%;
   }
 }
+@media (min-width: 1024px) {
+  dialog {
+    max-width: 75%;
+  }
+}
+
+@media (max-width: 768px) {
+  dialog {
+    max-width: 100vw !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+}
 
 dialog {
   border: none;
@@ -2154,7 +2169,7 @@ aside h6 {
 }
 
 .text-secondary {
-  color: var(--text-secondary) !important;
+  color: var(--gray-500) !important;
 }
 
 .text-primary {
@@ -4177,7 +4192,7 @@ aside h6 {
  
 @media (max-width: 768px) {
   body {
-    padding-bottom: 80px;  
+    padding-bottom: 150px;  
   }
 }
 
