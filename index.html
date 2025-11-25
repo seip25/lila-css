@@ -805,7 +805,7 @@ My switch
 
         themeSelector.addEventListener('change', (e) => {
             themeStylesheet.setAttribute('href', e.target.value);
-            htmlLink.innerHTML = `&lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/${e.target.value}.css" /&gt;`
+            htmlLink.innerHTML = `&lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/${e.target.value}" /&gt;`
             hljs.highlightAll();
         });
 
