@@ -4323,3 +4323,95 @@ aside h6 {
     padding-bottom: 150px;
   }
 }
+
+
+@media (max-width: 768px) {
+  body {
+    padding-bottom: 80px;
+  }
+}
+
+.fab {
+  position: fixed !important;
+  bottom: 2rem !important;
+  right: 2rem !important;
+  width: 56px !important;
+  height: 56px !important;
+  min-width: 56px !important;
+  border-radius: 50% !important;
+  background-color: var(--primary);
+  color: var(--on-primary);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  border: none !important;
+  cursor: pointer !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 1.5rem !important;
+  transition: all 0.3s ease !important;
+  z-index: 999 !important;
+  padding: 0 !important;
+}
+
+.fab:hover {
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.22) !important;
+  transform: scale(1.05) !important;
+}
+
+.fab:active {
+  transform: scale(0.95) !important;
+}
+
+.fab:has(.secondary) {
+  background-color: var(--secondary) !important;
+  color: var(--on-secondary) !important;
+}
+
+.fab:has(.fill) {
+  background-color: var(--fill) !important;
+  color: var(--on-fill) !important;
+}
+
+.fab:has(.ghost) {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+}
+
+.fab:has(.destructive) {
+  background-color: var(--destructive) !important;
+  color: var(--on-destructive) !important;
+}
+
+.fab:has(.outline) {
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--primary) !important;
+}
+
+body:has(.bottom-nav) .fab {
+  bottom: 6rem !important;
+}
+
+@media (max-width: 768px) {
+  body:has(.bottom-nav) .fab {
+    bottom: 5.5rem !important;
+  }
+}
+
+fieldset {
+  border: 1px solid var(--secondary);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin: 1rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+fieldset legend {
+  font-weight: 500;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}

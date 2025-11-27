@@ -186,6 +186,7 @@
                             <button class="destructive">Destructive</button>
                             <button class="ghost">Ghost</button>
                             <button class="fill">Fill</button>
+                            <button class="fab">+</button>
                         </div>
                     </div>
                     <pre><code class="language-html">&lt;button&gt;Primary&lt;/button&gt;
@@ -193,7 +194,16 @@
 &lt;button class="secondary"&gt;Secondary&lt;/button&gt;
 &lt;button class="destructive"&gt;Destructive&lt;/button&gt;
 &lt;button class="ghost"&gt;Ghost&lt;/button&gt;
-&lt;button class="fill"&gt;Fill&lt;/button&gt;</code></pre>
+&lt;button class="fill"&gt;Fill&lt;/button&gt;
+&lt;button class="fab">+&lt;/button&gt;
+&lt;button class="fab secondary">+&lt;/button&gt;
+&lt;button class="fab destructive">+&lt;/button&gt;
+&lt;button class="fab outline">+&lt;/button&gt;
+&lt;button class="fab fill">+&lt;/button&gt;
+&lt;button class="fab ghost">+&lt;/button&gt;
+
+
+</code></pre>
                 </div>
 
                 <div id="forms">
@@ -220,6 +230,14 @@
                                 My switch
                             </label>
                         </div>
+
+                        <fieldset>
+                            <legend>Personal Information</legend>
+                            <input type="text" placeholder="First Name">
+                            <input type="text" placeholder="Last Name">
+                            <input type="email" placeholder="Email">
+                            <button> Send</button>
+                        </fieldset>
                     </div>
                     <pre><code class="language-html">&lt;input type="text" placeholder="Standard Input"&gt;
 &lt;input class="fill" type="text" placeholder="Fill Input"&gt;
@@ -238,6 +256,13 @@
 My switch
 &lt;/label&gt;
  
+&lt;fieldset&gt;
+    &lt;legend&gt;Personal Information&lt;/legend&gt;
+    &lt;input type="text" placeholder="First Name"&gt;
+    &lt;input type="text" placeholder="Last Name"&gt;
+    &lt;input type="email" placeholder="Email"&gt;
+    &lt;button&gt; Send&lt;/button&gt;
+&lt;/fieldset&gt;
 </code></pre>
 
 
@@ -342,10 +367,19 @@ My switch
                         <code>&lt;div class="card"&gt;</code> to create bordered content blocks. They all share the same
                         base style.
                     </p>
-                    <div class="example border ">
+                    <div class="example border grid">
                         <article>
                             <h4>This is an Article</h4>
                             <p>Used for self-contained content.</p>
+                        </article>
+                        <article>
+                            <header>
+                                <img src="https://placehold.co/600x400" alt="" />
+                            </header>
+                            <p>My Card</p>
+                            <footer>
+                                <p>Footer</p>
+                            </footer>
                         </article>
                     </div>
                     <pre><code class="language-html">&lt;article&gt;
@@ -355,7 +389,23 @@ My switch
 
 &lt;div class="card"&gt;
   ...
-&lt;/div&gt;</code></pre>
+&lt;/div&gt;
+
+
+&lt;article&gt;
+  &lt;header&gt;
+     &lt;img src="https://placehold.co/600x400" alt="" /&gt; 
+    &lt;p&gt;Content...&lt;/p&gt;
+  &lt;/header&gt;
+  &lt;footer&gt;
+    &lt;p&gt;Footer&lt;/p&gt;
+  &lt;/footer&gt;
+&lt;/article&gt;
+
+&lt;div class="card"&gt;
+  ...
+&lt;/div&gt;
+</code></pre>
                 </div>
 
                 <div id="accordion">
@@ -395,7 +445,11 @@ My switch
                                 <p>Dialog content goes here.</p>
                                 <footer class="flex between items-center">
                                     <button class="ghost" onclick="commonDialog.close()">Close</button>
-                                    <button onclick="commonDialog.close()" class="secondary">Send</button>
+                                    <button onclick="commonDialog.close()">
+                                        <strong>
+                                            Send
+                                        </strong>
+                                    </button>
                                 </footer>
                             </article>
                         </dialog>
@@ -417,8 +471,8 @@ My switch
     &lt;article&gt;
       ... 
       &lt;footer class="flex between items-center"&gt;
-        &lt;button class="fill" onclick="myDialog.close()"&gt;Close&lt;/button&gt;
-        &lt;button onclick="myDialog.close()"&gt;Send&lt;/button&gt;
+        &lt;button class="ghost" onclick="myDialog.close()"&gt;Close&lt;/button&gt;
+        &lt;button onclick="myDialog.close()"   &gt;Send&lt;/button&gt;
       &lt;/footer&gt;
     &lt;/article&gt;
 &lt;/dialog&gt;</code></pre>
