@@ -4221,3 +4221,234 @@ fieldset legend {
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.no-width {
+  width: auto !important;
+  max-width: none !important;
+}
+
+.no-auto-flex {
+  flex-direction: row !important;
+}
+
+.no-auto-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
+}
+
+@media (max-width: 640px) {
+
+  main:not(.no-padding),
+  header:not(.no-padding),
+  footer:not(.no-padding) {
+    padding: 1rem 0;
+  }
+
+  article:not(.no-padding),
+  section:not(.no-padding) {
+    padding: 1rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  main:not(.no-padding),
+  header:not(.no-padding),
+  footer:not(.no-padding) {
+    padding: 1.5rem 0;
+  }
+
+  article:not(.no-padding),
+  section:not(.no-padding) {
+    padding: 1.5rem;
+  }
+}
+
+@media (min-width: 1025px) {
+
+  main:not(.no-padding),
+  header:not(.no-padding),
+  footer:not(.no-padding) {
+    padding: 2rem 0;
+  }
+
+  article:not(.no-padding),
+  section:not(.no-padding) {
+    padding: 2rem;
+  }
+}
+
+nav[role="menu"] ul,
+nav ul {
+  position: relative;
+  display: inline-block;
+}
+
+nav[role="menu"] ul>li,
+nav ul>li {
+  position: relative;
+  display: inline-block;
+}
+
+nav[role="menu"] ul>li>ul,
+nav ul>li>ul {
+  display: none;
+  position: absolute;
+  background-color: var(--surface);
+  min-width: 200px;
+  box-shadow: var(--shadow-md);
+  border-radius: var(--border-radius);
+  z-index: 1000;
+  padding: .5rem 0;
+  border: 1px solid var(--border-color);
+  top: 100%;
+  left: 0;
+}
+
+nav[role="menu"] ul>li:hover>ul,
+nav ul>li:hover>ul {
+  display: block;
+}
+
+nav[role="menu"] ul>li>ul>li,
+nav ul>li>ul>li {
+  display: block;
+}
+
+nav[role="menu"] ul>li>ul>li>a,
+nav ul>li>ul>li>a {
+  display: block;
+  padding: .75rem 1rem;
+  color: var(--on-surface);
+  text-decoration: none;
+}
+
+nav[role="menu"] ul>li>ul>li>a:hover,
+nav ul>li>ul>li>a:hover {
+  background-color: var(--blue-50);
+}
+
+[data-theme="dark"] nav[role="menu"] ul>li>ul>li>a:hover,
+[data-theme="dark"] nav ul>li>ul>li>a:hover {
+  background-color: var(--blue-900);
+}
+
+input[type="checkbox"]:indeterminate {
+  background-color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+input[type="checkbox"]:indeterminate::after {
+  content: "−";
+  color: var(--on-primary);
+  font-size: 1rem;
+  position: absolute;
+  top: -2px;
+  left: 2px;
+}
+
+
+
+fieldset:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+article>header>h1,
+article>header>h2,
+article>header>h3,
+section>header>h1,
+section>header>h2,
+section>header>h3 {
+  margin-bottom: 0;
+}
+
+article>header,
+section>header {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+}
+
+article>header>img,
+section>header>img {
+  margin: -3.5rem -4rem 1rem -1.5rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  width: calc(100% + 3rem);
+  max-width: calc(100% + 3rem);
+}
+
+
+@media (max-width: 640px) {
+
+  article>header>img,
+  section>header>img {
+    margin: -2rem 1rem -1rem -1rem;
+    max-width: calc(100% + 2rem);
+  }
+}
+
+article>footer,
+section>footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 640px) {
+  .flex:not(.no-auto-flex) {
+    flex-direction: column !important;
+  }
+
+  .grid:not(.no-auto-grid) {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+
+  .grid.cols-3:not(.no-auto-grid),
+  .grid.cols-4:not(.no-auto-grid),
+  .grid.cols-5:not(.no-auto-grid),
+  .grid.cols-6:not(.no-auto-grid) {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
+
+aside {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+aside::-webkit-scrollbar {
+  width: 6px;
+}
+
+aside::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+aside::-webkit-scrollbar-thumb {
+  background: var(--gray-200);
+  border-radius: 3px;
+}
+
+[data-theme="dark"] aside::-webkit-scrollbar-thumb {
+  background: var(--gray-800);
+}
+
+aside::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-300);
+}
+
+[data-theme="dark"] aside::-webkit-scrollbar-thumb:hover {
+  background: var(--gray-700);
+}
