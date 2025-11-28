@@ -74,7 +74,6 @@
 
 </head>
 
-
 <body>
 
     <header class="container">
@@ -84,6 +83,7 @@
                 <select id="theme-selector" class="mt-4 ">
                     <option value="lila.css">Default</option>
                     <option value="material.css">Material</option>
+                    <option value="old_material.css">Old Material</option>
                 </select>
                 <button class="fill" id="theme-toggle">Mode</button>
             </div>
@@ -194,7 +194,7 @@
                             <button class="destructive">Destructive</button>
                             <button class="ghost">Ghost</button>
                             <button class="fill">Fill</button>
-                            <button class="fab">+</button>
+                            <button class="fab secondary">+</button>
                         </div>
                     </div>
                     <pre><code class="language-html">&lt;button&gt;Primary&lt;/button&gt;
@@ -241,9 +241,18 @@
 
                         <fieldset>
                             <legend>Personal Information</legend>
-                            <input type="text" placeholder="First Name">
-                            <input type="text" placeholder="Last Name">
-                            <input type="email" placeholder="Email">
+                            <div class="floating">
+                                <input type="text" placeholder="">
+                                <label>First Name</label>
+                            </div>
+                            <div class="floating">
+                                <input type="text" placeholder="">
+                                <label>Last Name</label>
+                            </div>
+                            <div class="floating">
+                                <input type="email" placeholder="">
+                                <label>Email</label>
+                            </div>
                             <button> Send</button>
                         </fieldset>
                     </div>
