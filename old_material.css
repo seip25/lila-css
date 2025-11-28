@@ -135,10 +135,10 @@
 [data-theme="dark"] {
     --background: var(--gray-900);
     --surface: var(--gray-800);
-    --primary: var(--indigo-400);
+    --primary: var(--indigo-500);
     --primary-dark: var(--indigo-500);
     --primary-light: var(--indigo-600);
-    --outline: var(--indigo-400);
+    --outline: var(--indigo-500);
     --secondary: var(--pink-400);
     --destructive: var(--red-500);
     --on-primary: #ffffff;
