@@ -4567,48 +4567,8 @@ fieldset legend {
 .no-auto-grid {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
 }
-
-@media (max-width: 640px) {
-
-    main:not(.no-padding),
-    header:not(.no-padding),
-    footer:not(.no-padding) {
-        padding: 1rem 0;
-    }
-
-    article:not(.no-padding),
-    section:not(.no-padding) {
-        padding: 1rem;
-    }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-
-    main:not(.no-padding),
-    header:not(.no-padding),
-    footer:not(.no-padding) {
-        padding: 1.5rem 0;
-    }
-
-    article:not(.no-padding),
-    section:not(.no-padding) {
-        padding: 1.5rem;
-    }
-}
-
-@media (min-width: 1025px) {
-
-    main:not(.no-padding),
-    header:not(.no-padding),
-    footer:not(.no-padding) {
-        padding: 2rem 0;
-    }
-
-    article:not(.no-padding),
-    section:not(.no-padding) {
-        padding: 2rem;
-    }
-}
+ 
+ 
 
 nav[role="menu"] ul,
 nav ul {
