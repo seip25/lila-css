@@ -309,7 +309,7 @@ pre {
 
 /* --- Buttons --- */
 button,
-.button
+.button,
 a[role="button"] {
   padding: 0.6rem 1.2rem;
   border-radius: var(--border-radius);
@@ -340,7 +340,7 @@ button:hover {
   opacity: 0.9;
 }
 
-button.secondary 
+button.secondary ,
 a[role="button"].secondary{
   background-color: var(--secondary);
   color: var(--on-secondary);
