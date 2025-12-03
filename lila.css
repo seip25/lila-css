@@ -2,8 +2,7 @@
 - Lila CSS Framework
 - A semantic, modern CSS framework inspired by Pico.css and shadcn/ui.
 */
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+/*@import url('https://fonts.googleapis.com/icon?family=Material+Icons');*/
 
 :root {
   /* Color Palettes */
@@ -4243,47 +4242,8 @@ fieldset legend {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)) !important;
 }
 
-@media (max-width: 640px) {
-
-  main:not(.no-padding),
-  header:not(.no-padding),
-  footer:not(.no-padding) {
-    padding: 1rem 0;
-  }
-
-  article:not(.no-padding),
-  section:not(.no-padding) {
-    padding: 1rem;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-
-  main:not(.no-padding),
-  header:not(.no-padding),
-  footer:not(.no-padding) {
-    padding: 1.5rem 0;
-  }
-
-  article:not(.no-padding),
-  section:not(.no-padding) {
-    padding: 1.5rem;
-  }
-}
-
-@media (min-width: 1025px) {
-
-  main:not(.no-padding),
-  header:not(.no-padding),
-  footer:not(.no-padding) {
-    padding: 2rem 0;
-  }
-
-  article:not(.no-padding),
-  section:not(.no-padding) {
-    padding: 2rem;
-  }
-}
+ 
+ 
 
 nav[role="menu"] ul,
 nav ul {
@@ -4404,25 +4364,8 @@ section>footer {
   flex-wrap: wrap;
 }
 
-@media (max-width: 640px) {
-  .flex:not(.no-auto-flex) {
-    flex-direction: column !important;
-  }
-
-  .grid:not(.no-auto-grid) {
-    grid-template-columns: 1fr !important;
-  }
-}
-
-@media (min-width: 641px) and (max-width: 1024px) {
-
-  .grid.cols-3:not(.no-auto-grid),
-  .grid.cols-4:not(.no-auto-grid),
-  .grid.cols-5:not(.no-auto-grid),
-  .grid.cols-6:not(.no-auto-grid) {
-    grid-template-columns: repeat(2, 1fr) !important;
-  }
-}
+ 
+ 
 
 aside {
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
