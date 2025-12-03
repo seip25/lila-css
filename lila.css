@@ -4443,7 +4443,7 @@ aside::-webkit-scrollbar-thumb:hover {
 }
 
 /* Info Box */
-.info-box {
+.info-box,article.secondary,article.surface {
   background-color: var(--surface);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
