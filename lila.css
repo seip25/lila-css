@@ -298,7 +298,7 @@ pre {
 /* --- Buttons & Links as Buttons --- */
 button,
 a[role="button"] {
-  padding: 0.75rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: var(--border-radius);
   font-weight: 500;
   cursor: pointer;
