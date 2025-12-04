@@ -335,7 +335,12 @@ a[role="button"]:hover {
 [data-theme="dark"] a[role="button"]:hover {
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
-
+button.fill,
+a[role="button"].fill {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: none !important;
+}
 /* Secondary Button */
 button.secondary,
 a[role="button"].secondary {
