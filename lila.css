@@ -337,16 +337,16 @@ a[role="button"]:hover {
 }
 button.fill,
 a[role="button"].fill {
-  background-color: var(--surface);
-  color: var(--text-primary);
+  background-color: var(--surface) !important;
+  color: var(--text-primary) !important;
   border: none !important;
 }
 /* Secondary Button */
 button.secondary,
 a[role="button"].secondary {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1px solid var(--border-color);
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  border: 1px solid var(--border-color) !important;
 }
 
 button.secondary:hover,
@@ -374,9 +374,9 @@ a[role="button"].destructive:hover {
 /* Ghost Button */
 button.ghost,
 a[role="button"].ghost {
-  background-color: transparent;
-  color: var(--text-primary);
-  border: 1px solid transparent;
+  background-color: transparent !important;
+  color: var(--text-primary) !important;
+  border: 1px solid transparent !important;
 }
 
 button.ghost:hover,
@@ -392,9 +392,9 @@ a[role="button"].ghost:hover {
 /* Outline Button */
 button.outline,
 a[role="button"].outline {
-  background-color: transparent;
-  color: var(--primary);
-  border: 1px solid var(--outline);
+  background-color: transparent !important;
+  color: var(--primary) !important;
+  border: 1px solid var(--outline) !important;
 }
 
 button.outline:hover,
