@@ -141,8 +141,9 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans",
-    Helvetica, Arial, sans-serif;
+  font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans", Helvetica,
+    Arial, sans-serif;
   line-height: 1.6;
 }
 
@@ -231,9 +232,20 @@ li {
   padding: 0 1rem;
 }
 
-header,
-footer {
-  padding: 1rem 0;
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 95%;
+  }
 }
 
 main {
@@ -349,7 +361,7 @@ a[role="button"].fill {
 button.secondary,
 a[role="button"].secondary {
   background-color: transparent !important;
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
   border: 1px solid var(--border-color) !important;
 }
 
@@ -379,7 +391,7 @@ a[role="button"].destructive:hover {
 button.ghost,
 a[role="button"].ghost {
   background-color: transparent !important;
-  color: var(--text-primary) !important;
+  color: var(--text-primary);
   border: 1px solid transparent !important;
 }
 
@@ -397,7 +409,7 @@ a[role="button"].ghost:hover {
 button.outline,
 a[role="button"].outline {
   background-color: transparent !important;
-  color: var(--primary) !important;
+  color: var(--primary);
   border: 1px solid var(--outline) !important;
 }
 
@@ -727,7 +739,7 @@ dialog {
 @media (max-width: 768px) {
   dialog {
     max-width: 100vw !important;
-    width: 100% !important; 
+    width: 100% !important;
     border-radius: 0 !important;
   }
 }
@@ -3079,7 +3091,8 @@ aside h6 {
 }
 
 [data-theme="dark"] .shadow-md {
-  box-shadow: 0 1px 2px -1px rgb(255 255 255 / 0.1),
+  box-shadow:
+    0 1px 2px -1px rgb(255 255 255 / 0.1),
     0 1px 2px -2px rgb(255 255 255 / 0.1);
 }
 
@@ -4171,7 +4184,9 @@ aside h6 {
   border-radius: 50% !important;
   background-color: var(--primary);
   color: var(--on-primary);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.2),
+    0 6px 20px rgba(0, 0, 0, 0.19);
   border: none !important;
   cursor: pointer !important;
   display: flex !important;
@@ -4184,7 +4199,9 @@ aside h6 {
 }
 
 .fab:hover {
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25), 0 8px 24px rgba(0, 0, 0, 0.22) !important;
+  box-shadow:
+    0 6px 12px rgba(0, 0, 0, 0.25),
+    0 8px 24px rgba(0, 0, 0, 0.22) !important;
   transform: scale(1.05) !important;
 }
 
@@ -4452,7 +4469,9 @@ aside::-webkit-scrollbar-thumb:hover {
 }
 
 /* Info Box */
-.info-box,article.secondary,article.surface {
+.info-box,
+article.secondary,
+article.surface {
   background-color: var(--surface);
   border: 1px solid var(--border-color);
   border-radius: var(--border-radius-lg);
