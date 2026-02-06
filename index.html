@@ -121,6 +121,7 @@
                 <a href="#accordion">Accordion</a>
                 <a href="#dialog">Dialog (Modal)</a>
                 <a href="#dropdown">Dropdown</a>
+                <a href="#snackbar-doc">Snackbar</a>
 
                 <h4>Utilities</h4>
                 <a href="#flex-sizing">Flex & Sizing</a>
@@ -147,6 +148,7 @@
                         </a>
                     </footer>
                 </div>
+                <br />
 
                 <div id="install" class="mt-4">
                     <div class="text-center">
@@ -156,12 +158,13 @@
                         <button class="primary" id="download-btn">Download</button>
                     </div>
                     <pre>
-                        <code class="language-html" id="html-link">
+<code class="language-html" id="html-link">
 &lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/lila.css" /&gt;
+&lt;script src="https://seip25.github.io/lila-css/lila.js"&gt;&lt;/script&gt;
                         </code>
                     </pre>
                 </div>
-
+                <hr />
                 <div id="buttons">
                     <h2>Buttons</h2>
                     <p>Various button styles for different actions.</p>
@@ -182,6 +185,7 @@
                         <button class="fab destructive">+</button>
                         <a role="button">Link button</a>
                         <a role="button" class="secondary">Link button secondary</a>
+                        <button class="fab" onclick="showDemoSnackbar()">+</button>
                     </div>
                     <pre><code class="language-html">&lt;button&gt;Primary&lt;/button&gt;
 &lt;button class="outline"&gt;Outline&lt;/button&gt;
@@ -201,7 +205,7 @@
 
 </code></pre>
                 </div>
-
+                <hr />
                 <div id="forms">
                     <h2>Forms</h2>
                     <p>Styles for inputs, textareas, selects, and floating labels.</p>
@@ -272,7 +276,7 @@ My switch
 
 
                 </div>
-
+                <hr />
                 <div id="typography">
                     <h2>Typography</h2>
                     <p>Semantic styling for all text elements.</p>
@@ -286,7 +290,7 @@ My switch
                             and inline <code>&lt;code&gt;</code> snippets.</p>
                     </div>
                 </div>
-
+                <hr />
                 <div id="table">
                     <h2>Table</h2>
                     <p>Responsive and clean tables.</p>
@@ -319,15 +323,44 @@ My switch
                         </table>
                     </div>
                 </div>
-
+                <hr />
                 <div id="container">
                     <h2>Container</h2>
                     <p>The <code>.container</code> class centers content with a max-width of 1120px.</p>
+                    <p>
                     <pre><code class="language-html">&lt;div class="container"&gt;
   Your content here...
-&lt;/div&gt;</code></pre>
-                </div>
+&lt;/div&gt; 
+</code></pre>
+                    <br />
+                    <h5>Lila.css core</h5>
+                    <pre>
+    <code class="language-css"> .container {
+  width: 100%;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
 
+@media (max-width: 768px) {
+  .container {
+    padding: 0 0.5rem;
+  }
+}
+@media (max-width: 1440px) {
+  .container {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  .container {
+    max-width: 95%;
+  }
+}
+    </code>
+</pre>
+                </div>
+                <hr />
                 <div id="grid">
                     <h2>Grid System</h2>
                     <p>A responsive grid system using CSS Grid. Use <code>.grid</code> and column utilities like
@@ -365,7 +398,7 @@ My switch
 /* Padding */
 .p-4</code></pre>
                 </div>
-
+                <hr />
                 <div id="card">
                     <h2>Card / Content Block</h2>
                     <p>Use <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, or a
@@ -412,7 +445,7 @@ My switch
 &lt;/div&gt;
 </code></pre>
                 </div>
-
+                <hr />
                 <div id="accordion">
                     <h2>Accordion</h2>
                     <p>A simple, semantic accordion using <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>.
@@ -432,7 +465,7 @@ My switch
   &lt;p&gt;Content...&lt;/p&gt;
 &lt;/details&gt;</code></pre>
                 </div>
-
+                <hr />
                 <div id="dialog">
                     <h2>Dialog (Modal)</h2>
                     <p>Semantic modals using the <code>&lt;dialog&gt;</code> element. Includes a fullscreen variant.</p>
@@ -482,7 +515,7 @@ My switch
     &lt;/article&gt;
 &lt;/dialog&gt;</code></pre>
                 </div>
-
+                <hr />
                 <div id="dropdown">
                     <h2>Dropdown</h2>
                     <p>A CSS-only dropdown menu, activated on hover.</p>
@@ -503,7 +536,60 @@ My switch
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
                 </div>
+                <hr />
 
+                <div id="snackbar-doc">
+                    <h2>Snackbar</h2>
+                    <p>Import lila.js and usage with lila('snackbar', { ... })
+                        ('component', { message...,duration...,type... })
+                    </p>
+                    <div class="example border ">
+                        <div class="snackbar">
+                            <button class="primary" onclick="lila('snackbar', {
+                                message: 'Hello! This is a Lila CSS snackbar.',
+                                duration: 3000,
+                                type: 'success'
+                            })">Success</button>
+                            <button class="destructive" onclick="lila('snackbar', {
+                                message: 'Hello! This is a Lila CSS snackbar.',
+                                duration: 3000,
+                                type: 'error'
+                            })">Error</button>
+                            <button class="secondary" onclick="lila('snackbar', {
+                                message: 'Hello! This is a Lila CSS snackbar.',
+                                duration: 3000,
+                                type: 'warning'
+                            })">Warning</button>
+                            <button class="fill" onclick="lila('snackbar', {
+                                message: 'Hello! This is a Lila CSS snackbar.',
+                                duration: 3000,
+                                type: 'info'
+                            })">Info</button>
+                        </div>
+                    </div>
+                    <pre><code class="language-html">&lt;button class="primary" onclick="lila('snackbar', {
+                                message: 'Hello! This is a Lila CSS snackbar.',
+                                duration: 3000,
+                                type: 'success'
+                            })"&gt;Show Snackbar&lt;/button&gt;
+&lt;button class="primary" onclick="lila('snackbar', {
+    message: 'Hello! This is a Lila CSS snackbar.',
+    duration: 3000,
+    type: 'error'
+})"&gt;Show Snackbar&lt;/button&gt;
+&lt;button class="primary" onclick="lila('snackbar', {
+    message: 'Hello! This is a Lila CSS snackbar.',
+    duration: 3000,
+    type: 'warning'
+})"&gt;Show Snackbar&lt;/button&gt;
+&lt;button class="primary" onclick="lila('snackbar', {
+    message: 'Hello! This is a Lila CSS snackbar.',
+    duration: 3000,
+    type: 'info'
+})"&gt;Show Snackbar&lt;/button&gt;
+                    </code></pre>
+                </div>
+                <hr />
                 <div id="flex-sizing">
                     <h2>Flex & Sizing Utilities</h2>
                     <p>A collection of utilities for flexbox layouts, sizing, and visibility.</p>
@@ -529,7 +615,7 @@ My switch
 /* Visibility */
 .hidden { display: none !important; }</code></pre>
                 </div>
-
+                <hr />
                 <div id="responsive">
                     <h2>Responsive Visibility</h2>
                     <p>Show or hide elements based on screen size using responsive utility classes.</p>
@@ -549,7 +635,7 @@ My switch
 &lt;div class="hidden-md"&gt;Hidden on Tablet&lt;/div&gt;
 &lt;div class="hidden-lg"&gt;Hidden on Desktop&lt;/div&gt;</code></pre>
                 </div>
-
+                <hr />
                 <div id="colors">
                     <h2>Color Utilities</h2>
                     <p>Apply colors using semantic classes like <code>.bg-primary</code> and <code>.text-success</code>,
@@ -862,24 +948,47 @@ My switch
             html.setAttribute('data-theme', html.getAttribute('data-theme') === 'light' ? 'dark' : 'light');
         });
 
+
         themeSelector.addEventListener('change', (e) => {
             themeStylesheet.setAttribute('href', e.target.value);
-            htmlLink.innerHTML = `&lt;link rel="stylesheet" href="https://seip25.github.io/lila-css/${e.target.value}" /&gt;`
+            htmlLink.innerText = `<link rel="stylesheet" href="https://seip25.github.io/lila-css/${e.target.value}" />\n<script src="https://seip25.github.io/lila-css/lila.js"><\/script>`;
             hljs.highlightAll();
         });
 
         downloadBtn.addEventListener('click', () => {
-            const cssFilePath = `${themeSelector.value}`;
-            const link = document.createElement('a');
-            link.href = cssFilePath;
-            link.download = `${themeSelector.value}.css`;
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+            const cssFile = themeSelector.value;
+            const jsFile = 'lila.js';
+
+            // Download CSS
+            const cssLink = document.createElement('a');
+            cssLink.href = cssFile;
+            cssLink.download = cssFile;
+            document.body.appendChild(cssLink);
+            cssLink.click();
+            document.body.removeChild(cssLink);
+
+            // Download JS
+            setTimeout(() => {
+                const jsLink = document.createElement('a');
+                jsLink.href = jsFile;
+                jsLink.download = jsFile;
+                document.body.appendChild(jsLink);
+                jsLink.click();
+                document.body.removeChild(jsLink);
+            }, 500);
         });
         const commonDialog = document.getElementById('commonDialog');
         const dialogFull = document.getElementById('dialogFull');
+    </script>
+    <script src="lila.js"></script>
+    <script>
+        function showDemoSnackbar() {
+            lila('snackbar', {
+                message: 'Hello! This is a Lila CSS snackbar.',
+                type: 'success',
+                duration: 3000
+            });
+        }
     </script>
 </body>
 
