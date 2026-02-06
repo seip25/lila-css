@@ -323,7 +323,9 @@ pre {
     overflow-wrap: break-word;
     word-break: break-word;
 }
-
+a[role="button"] {
+  padding: 0.4rem 1.3rem !important;
+}
 button,
 .button,
 a[role="button"] {
