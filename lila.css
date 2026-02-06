@@ -296,6 +296,9 @@ pre {
 }
 
 /* --- Buttons & Links as Buttons --- */
+a[role="button"]{
+  padding: 0.3rem 1.3rem !important;
+}
 button,
 a[role="button"] {
   padding: 0.5rem 1.5rem;
