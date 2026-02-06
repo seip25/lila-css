@@ -4913,14 +4913,19 @@ aside::-webkit-scrollbar-thumb:hover {
   color: white;
 }
 #snackbar.error {
-  background-color: var(--red-600);
+  background-color: var(--destructive);
   color: white;
 }
 #snackbar.info {
-  background-color: var(--blue-600);
-  color: white;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
+#snackbar.secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
 #snackbar.warning {
-  background-color: var(--yellow-500);
+  background-color: var(--yellow-600);
   color: white;
 }

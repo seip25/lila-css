@@ -1109,35 +1109,35 @@ aside h6 {
 }
 
 .text-yellow-50 {
-  color: var(--yellow-50);
+  color: var(--yellow-50) !important;
 }
 
 .text-yellow-100 {
-  color: var(--yellow-100);
+  color: var(--yellow-100) !important;
 }
 
 .text-yellow-200 {
-  color: var(--yellow-200);
+  color: var(--yellow-200) !important;
 }
 
 .text-yellow-300 {
-  color: var(--yellow-300);
+  color: var(--yellow-300) !important;
 }
 
 .text-yellow-400 {
-  color: var(--yellow-400);
+  color: var(--yellow-400) !important;
 }
 
 .text-yellow-500 {
-  color: var(--yellow-500);
+  color: var(--yellow-500) !important;
 }
 
 .text-yellow-600 {
-  color: var(--yellow-600);
+  color: var(--yellow-600) !important;
 }
 
 .text-yellow-700 {
-  color: var(--yellow-700);
+  color: var(--yellow-700) !important;
 }
 
 .text-yellow-800 {
@@ -4821,14 +4821,19 @@ article > footer {
   color: white;
 }
 #snackbar.error {
-  background-color: var(--red-600);
+  background-color: var(--destructive);
   color: white;
 }
 #snackbar.info {
-  background-color: var(--blue-600);
-  color: white;
+  background-color: var(--primary);
+  color: var(--on-primary);
 }
+#snackbar.secondary {
+  background-color: var(--secondary);
+  color: var(--on-secondary);
+}
+
 #snackbar.warning {
-  background-color: var(--yellow-500);
+  background-color: var(--yellow-600);
   color: white;
 }
