@@ -4559,9 +4559,7 @@ section > header > img {
 @media (max-width: 640px) {
   article > header > img,
   section > header > img {
-    margin: -2rem 1rem -1rem -1rem;
-
-    max-width: calc(100% + 2rem);
+    margin: -1.5rem 1rem 0.5rem -1.5rem;
   }
 }
 
