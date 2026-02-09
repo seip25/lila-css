@@ -1,8 +1,9 @@
 /*
 - Lila CSS Framework
 - A semantic, modern CSS framework inspired by Pico.css and shadcn/ui.
+
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 */
-/* @import url('https://fonts.googleapis.com/icon?family=Material+Icons'); */
 
 :root {
   /* Color Palettes */
@@ -4703,41 +4704,39 @@ article > footer {
 .inline {
   display: inline !important;
 }
-.flex {
-  display: flex !important;
-}
+ 
 .flex-col {
-  flex-direction: column !important;
+  flex-direction: column ;
 }
 .flex-row {
-  flex-direction: row !important;
+  flex-direction: row  ;
 }
 .flex-wrap {
-  flex-wrap: wrap !important;
+  flex-wrap: wrap ;
 }
 .items-center {
-  align-items: center !important;
+  align-items: center  ;
 }
 .items-start {
-  align-items: flex-start !important;
+  align-items: flex-start ;
 }
 .items-end {
-  align-items: flex-end !important;
+  align-items: flex-end ;
 }
 .justify-center {
-  justify-content: center !important;
+  justify-content: center ;
 }
 .justify-start {
-  justify-content: flex-start !important;
+  justify-content: flex-start  ;
 }
 .justify-end {
-  justify-content: flex-end !important;
+  justify-content: flex-end  ;
 }
 .justify-between {
-  justify-content: space-between !important;
+  justify-content: space-between  ;
 }
 .justify-around {
-  justify-content: space-around !important;
+  justify-content: space-around ;
 }
 
 .hidden {
