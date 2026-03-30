@@ -80,12 +80,13 @@
         <nav class="container">
             <h2 class="text-indigo-500">Lila CSS</h2>
             <div class="flex justify-around gap-4 items-center">
-                <select id="theme-selector" class="mt-4 ">
+                 <button class="fill px-4 py-4" id="theme-toggle">Mode</button> 
+                <select id="theme-selector" class="mt-4 fill">
                     <option value="lila.css">Default</option>
                     <option value="material.css">Material</option>
                     <option value="old_material.css">Old Material</option>
                 </select>
-                <button class="fill" id="theme-toggle">Mode</button>
+               
             </div>
         </nav>
     </header>
@@ -100,7 +101,7 @@
         </nav>
 
         <div class="flex gap-4">
-            <aside class="docs-nav hidden-sm bg-background">
+            <aside class="docs-nav hidden-sm  ">
                 <h4>Getting Started</h4>
                 <a href="#introduction">Introduction</a>
 
@@ -134,21 +135,20 @@
 
             <div>
                 <div id="introduction" class="mt-4 ">
-                    <article class="bg-surface border-none">
+                    <div class=" border-none">
                         <h1 class="text-indigo-500">Lila CSS Framework</h1>
                         <p class="text-secondary">A semantic, modern CSS framework inspired by Pico.css , Material
                             Design and shadcn/ui.
                         </p>
                         <p>This documentation provides a complete guide to all the components and utilities available in
                             Lila CSS.</p>
-                    </article>
+                    </div>
                     <footer>
-                        <a href="https://github.com/seip25/lila-css">
+                        <a href="https://github.com/seip25/lila-css" role="button">
                             Give it a ⭐ on GitHub
                         </a>
                     </footer>
-                </div>
-                <br />
+                </div> 
 
                 <div id="install" class="mt-4">
                     <div class="text-center">
@@ -165,7 +165,7 @@
                     </pre>
                 </div>
                 <hr />
-                <div id="buttons">
+                <article id="buttons">
                     <h2>Buttons</h2>
                     <p>Various button styles for different actions.</p>
                     <div class="example border ">
@@ -204,9 +204,9 @@
 
 
 </code></pre>
-                </div>
-                <hr />
-                <div id="forms">
+                </article>
+                <br />
+                <article id="forms">
                     <h2>Forms</h2>
                     <p>Styles for inputs, textareas, selects, and floating labels.</p>
                     <div class="example border ">
@@ -275,9 +275,9 @@ My switch
 </code></pre>
 
 
-                </div>
-                <hr />
-                <div id="typography">
+                </article>
+                <br />
+                <article id="typography">
                     <h2>Typography</h2>
                     <p>Semantic styling for all text elements.</p>
                     <div class="example border ">
@@ -289,9 +289,9 @@ My switch
                         <p>You can use <mark>marked text</mark>, keyboard shortcuts like <kbd>Ctrl</kbd>+<kbd>K</kbd>,
                             and inline <code>&lt;code&gt;</code> snippets.</p>
                     </div>
-                </div>
-                <hr />
-                <div id="table">
+                </article>
+                <br />
+                <article id="table">
                     <h2>Table</h2>
                     <p>Responsive and clean tables.</p>
                     <div class="example border ">
@@ -322,9 +322,9 @@ My switch
                             </tbody>
                         </table>
                     </div>
-                </div>
-                <hr />
-                <div id="container">
+                </article>
+                <br />
+                <article id="container">
                     <h2>Container</h2>
                     <p>The <code>.container</code> class centers content with a max-width of 1120px.</p>
                     <p>
@@ -359,9 +359,9 @@ My switch
 }
     </code>
 </pre>
-                </div>
-                <hr />
-                <div id="grid">
+                </article>
+                <br />
+                <article id="grid">
                     <h2>Grid System</h2>
                     <p>A responsive grid system using CSS Grid. Use <code>.grid</code> and column utilities like
                         <code>.cols-2</code>, <code>.cols-3</code>.
@@ -397,8 +397,8 @@ My switch
 
 /* Padding */
 .p-4</code></pre>
-                </div>
-                <hr />
+                </article>
+                <br />
                 <div id="card">
                     <h2>Card / Content Block</h2>
                     <p>Use <code>&lt;article&gt;</code>, <code>&lt;section&gt;</code>, or a
@@ -445,8 +445,8 @@ My switch
 &lt;/div&gt;
 </code></pre>
                 </div>
-                <hr />
-                <div id="accordion">
+                <br />
+                <article id="accordion">
                     <h2>Accordion</h2>
                     <p>A simple, semantic accordion using <code>&lt;details&gt;</code> and <code>&lt;summary&gt;</code>.
                     </p>
@@ -464,9 +464,9 @@ My switch
   &lt;summary&gt;Title&lt;/summary&gt;
   &lt;p&gt;Content...&lt;/p&gt;
 &lt;/details&gt;</code></pre>
-                </div>
-                <hr />
-                <div id="dialog">
+                </article>
+                <br />
+                <article id="dialog">
                     <h2>Dialog (Modal)</h2>
                     <p>Semantic modals using the <code>&lt;dialog&gt;</code> element. Includes a fullscreen variant.</p>
                     <div class="example border ">
@@ -514,9 +514,9 @@ My switch
       &lt;/footer&gt;
     &lt;/article&gt;
 &lt;/dialog&gt;</code></pre>
-                </div>
-                <hr />
-                <div id="dropdown">
+                </article>
+                <br />
+                <article id="dropdown">
                     <h2>Dropdown</h2>
                     <p>A CSS-only dropdown menu, activated on hover.</p>
                     <div class="example border ">
@@ -535,10 +535,10 @@ My switch
     &lt;a class="dropdown-item"&gt;...&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
-                </div>
-                <hr />
+                </article>
+                <br />
 
-                <div id="snackbar-doc">
+                <article id="snackbar-doc">
                     <h2>Snackbar</h2>
                     <p>Import lila.js and usage with lila('snackbar', { ... })
                         ('component', { message...,duration...,type... })
@@ -593,9 +593,9 @@ My switch
     type: 'info'
 })"&gt;Show Snackbar&lt;/button&gt;
                     </code></pre>
-                </div>
-                <hr />
-                <div id="flex-sizing">
+                </article>
+                <br />
+                <article id="flex-sizing">
                     <h2>Flex & Sizing Utilities</h2>
                     <p>A collection of utilities for flexbox layouts, sizing, and visibility.</p>
                     <div class="example border ">
@@ -621,9 +621,9 @@ My switch
 
 /* Visibility */
 .hidden { display: none !important; }</code></pre>
-                </div>
-                <hr />
-                <div id="responsive">
+                </article>
+                <br />
+                <article id="responsive">
                     <h2>Responsive Visibility</h2>
                     <p>Show or hide elements based on screen size using responsive utility classes.</p>
                     <div class="example border ">
@@ -641,9 +641,66 @@ My switch
 &lt;div class="hidden-sm"&gt;Hidden on Mobile&lt;/div&gt;
 &lt;div class="hidden-md"&gt;Hidden on Tablet&lt;/div&gt;
 &lt;div class="hidden-lg"&gt;Hidden on Desktop&lt;/div&gt;</code></pre>
-                </div>
-                <hr />
-                <div id="colors">
+                </article>
+                <br />
+
+                    <article id="shadows">
+                        <h2>Shadows</h2>
+                        <p>Apply shadows using the <code>.shadow</code> class or CSS variables for more control.</p>
+                        <div class="example border ">
+                            <div class="grid cols-2 gap-4">
+                                <div class="card shadow text-center">.shadow</div>
+                                <div class="card text-center" style="box-shadow: var(--shadow-md);">shadow-md</div>
+                            </div>
+                        </div>
+                        <pre><code class="language-html">&lt;div class="shadow"&gt;...&lt;/div&gt;
+&lt;div style="box-shadow: var(--shadow-md);"&gt;...&lt;/div&gt;</code></pre>
+                    </article>
+                    <br />
+                    <article id="borders">
+                        <h2>Borders</h2>
+                        <p>Control border-radius and add borders with utility classes.</p>
+                        <div class="example border ">
+                            <div class="grid cols-4 gap-4">
+                                <div class="card text-center">default</div>
+                                <div class="card text-center rounded-lg">.rounded-lg</div>
+                                <div class="card text-center rounded-full">.rounded-full</div>
+                                <div class="border rounded text-center p-4">.border</div>
+                            </div>
+                        </div>
+                        <pre><code class="language-html">&lt;div class="rounded-lg"&gt;...&lt;/div&gt;
+&lt;div class="border"&gt;...&lt;/div&gt;</code></pre>
+                    </article>
+                    <br />
+                    <article id="bottom-nav-doc">
+                        <h2>Bottom Navigation Bar</h2>
+                        <p>
+                            A mobile-friendly bottom navigation bar that stays fixed to the bottom of the page.
+                            Useful for mobile layouts or Progressive Web Apps.
+                            You may combine it with the <code>visible-sm</code> utility class
+                            to show it <strong>only on small screens</strong>, or remove it to display the bar
+                            everywhere.
+                        </p>
+
+
+
+                        <pre><code class="language-html">&lt;nav class="bottom-nav visible-sm"&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="/search"&gt;Search&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/cart"&gt;Cart&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/account"&gt;Account&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+
+
+                        <p>
+                            The <code>visible-sm</code> class ensures the bar only appears on small screens.
+                            Remove the class if you want the bottom nav to be visible at all screen sizes.
+                        </p>
+                    </article>
+                    <br />
+                    
+                <article id="colors">
                     <h2>Color Utilities</h2>
                     <p>Apply colors using semantic classes like <code>.bg-primary</code> and <code>.text-success</code>,
                         or use the full palette.</p>
@@ -878,62 +935,7 @@ My switch
                             <p class="text-violet-50">900</p>
                         </div>
 
-                    </div>
-
-                    <div id="shadows">
-                        <h2>Shadows</h2>
-                        <p>Apply shadows using the <code>.shadow</code> class or CSS variables for more control.</p>
-                        <div class="example border ">
-                            <div class="grid cols-2 gap-4">
-                                <div class="card shadow text-center">.shadow</div>
-                                <div class="card text-center" style="box-shadow: var(--shadow-md);">shadow-md</div>
-                            </div>
-                        </div>
-                        <pre><code class="language-html">&lt;div class="shadow"&gt;...&lt;/div&gt;
-&lt;div style="box-shadow: var(--shadow-md);"&gt;...&lt;/div&gt;</code></pre>
-                    </div>
-
-                    <div id="borders">
-                        <h2>Borders</h2>
-                        <p>Control border-radius and add borders with utility classes.</p>
-                        <div class="example border ">
-                            <div class="grid cols-4 gap-4">
-                                <div class="card text-center">default</div>
-                                <div class="card text-center rounded-lg">.rounded-lg</div>
-                                <div class="card text-center rounded-full">.rounded-full</div>
-                                <div class="border rounded text-center p-4">.border</div>
-                            </div>
-                        </div>
-                        <pre><code class="language-html">&lt;div class="rounded-lg"&gt;...&lt;/div&gt;
-&lt;div class="border"&gt;...&lt;/div&gt;</code></pre>
-                    </div>
-
-                    <div id="bottom-nav-doc">
-                        <h2>Bottom Navigation Bar</h2>
-                        <p>
-                            A mobile-friendly bottom navigation bar that stays fixed to the bottom of the page.
-                            Useful for mobile layouts or Progressive Web Apps.
-                            You may combine it with the <code>visible-sm</code> utility class
-                            to show it <strong>only on small screens</strong>, or remove it to display the bar
-                            everywhere.
-                        </p>
-
-
-
-                        <pre><code class="language-html">&lt;nav class="bottom-nav visible-sm"&gt;
-  &lt;ul&gt;
-    &lt;li&gt;&lt;a href="/search"&gt;Search&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/cart"&gt;Cart&lt;/a&gt;&lt;/li&gt;
-    &lt;li&gt;&lt;a href="/account"&gt;Account&lt;/a&gt;&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/nav&gt;</code></pre>
-
-
-                        <p>
-                            The <code>visible-sm</code> class ensures the bar only appears on small screens.
-                            Remove the class if you want the bottom nav to be visible at all screen sizes.
-                        </p>
-                    </div>
+                </article>
 
 
                 </div>
