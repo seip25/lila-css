@@ -74,10 +74,10 @@
 
 </head>
 
-<body>
+<body class="flex flex-col min-h-screen bg-surface">
 
-    <header class="container">
-        <nav>
+    <header class="bg-background">
+        <nav class="container">
             <h2 class="text-indigo-500">Lila CSS</h2>
             <div class="flex justify-around gap-4 items-center">
                 <select id="theme-selector" class="mt-4 ">
@@ -100,7 +100,7 @@
         </nav>
 
         <div class="flex gap-4">
-            <aside class="docs-nav hidden-sm">
+            <aside class="docs-nav hidden-sm bg-background">
                 <h4>Getting Started</h4>
                 <a href="#introduction">Introduction</a>
 
@@ -654,6 +654,9 @@ My switch
                             </div>
                             <div class="card bg-secondary text-center">
                                 <p>Secondary</p>
+                            </div>
+                             <div class="card bg-background text-center">
+                                <p>Backgroud</p>
                             </div>
                             <div class="card bg-surface text-center">
                                 <p>Surface</p>
