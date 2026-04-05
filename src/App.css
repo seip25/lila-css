@@ -1,0 +1,20 @@
+body {
+  scroll-padding-top: 2rem;
+}
+
+pre {
+  background-color: #282c34;
+  border-radius: var(--border-radius);
+  padding: 1rem;
+  margin: 1rem 0;
+  white-space: pre-wrap;
+  color: #abb2bf;
+  font-family: monospace;
+}
+
+.example {
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
