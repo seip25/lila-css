@@ -1,16 +1,45 @@
-# React + Vite
+# Lila CSS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A semantic, lightweight, modern CSS framework inspired by Pico.css and shadcn/ui.
 
-Currently, two official plugins are available:
+📖 [Documentation](https://seip25.github.io/lila-css/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🧰 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Responsive grid system with utility classes like `.cols-2`, `.cols-3`, etc.
+- Buttons: primary, outline, secondary, destructive, ghost, fill.
+- Form elements: inputs, textareas, selects, floating labels.
+- Typography: headings, blockquotes, code, marked text.
+- Tables with clean styling and responsive behavior.
+- Components: cards, accordions, dialogs (modals), dropdowns.
+- Utility classes: spacing, sizing (`.w-full`, percentages, px widths), visibility, colors, shadows, borders.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Getting Started
+
+Include the stylesheet in your project:
+
+```html
+<link rel="stylesheet" href="https://seip25.github.io/lila-css/lila.css" />
+```
+
+```html
+<button class="outline">Primary Outline</button>
+<input type="text" class="fill" placeholder="Fill Input" />
+<div class="grid cols-3 gap-2">
+  <div>Col 1</div>
+  <div>Col 2</div>
+  <div>Col 3</div>
+</div>
+```
+
+## 📐 Utility Classes
+
+Width / Sizing: .w-full, .w-auto, .w-50-px, .w-100-px, etc.
+
+Visibility for breakpoints: .visible-sm, .hidden-md, etc.
+
+Spacing: margin, padding, gap utilities.
