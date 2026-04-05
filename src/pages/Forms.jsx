@@ -4,71 +4,176 @@ export default function Forms() {
   return (
     <article>
       <h2>Forms</h2>
-      <p>Styles for inputs, textareas, selects, and floating labels.</p>
-      <div className="example  ">
-        <input type="text" placeholder="Standard Input" />
-        <input type="text" className="fill mt-4" placeholder="Fill Input" />
-        <select className="mt-4">
-          <option>Select Menu</option>
-        </select>
-        <select className="mt-4 fill">
-          <option>Select Menu</option>
-        </select>
-        <textarea className="mt-4" placeholder="Textarea" rows="3"></textarea>
-        <div className="floating mt-4">
-          <input type="email" id="float" placeholder=" " />
-          <label htmlFor="float">Floating Label</label>
-        </div>
+      <p>
+        All form elements — inputs, textareas, selects — are styled automatically.
+        Just use standard HTML. No classes needed for the default style. Add <code>.fill</code> for a filled variant.
+      </p>
 
-        <div className="mt-4">
-          <label>
-            <input type="checkbox" name="switch" role="switch" />
-            My switch
-          </label>
-        </div>
-
-       
+      <h3>Standard Inputs</h3>
+      <div className="example">
+        <input type="text" placeholder="Text Input" />
+        <input type="email" placeholder="Email Input" />
+        <input type="password" placeholder="Password" />
+        <input type="number" placeholder="Number" />
       </div>
-       <fieldset>
-          <legend>Personal Information</legend>
-          <div className="floating">
-            <input type="text" placeholder="" />
-            <label>First Name</label>
-          </div>
-          <div className="floating">
-            <input type="text" placeholder="" />
-            <label>Last Name</label>
-          </div>
-          <div className="floating">
-            <input type="email" placeholder="" />
-            <label>Email</label>
-          </div>
-          <button> Send</button>
-        </fieldset>
       <CodeBlock language="html">
-{`<input type="text" placeholder="Standard Input">
-<input class="fill" type="text" placeholder="Fill Input">
-<select>...</select>
-<select class="fill" >...</select>
-<textarea placeholder="Textarea"></textarea>
+{`<input type="text" placeholder="Text Input">
+<input type="email" placeholder="Email Input">
+<input type="password" placeholder="Password">
+<input type="number" placeholder="Number">`}
+      </CodeBlock>
 
-<div class="floating">
-  <input type="email" id="float" placeholder=" " />
-  <label for="float">Floating Label</label>
+      <h3>Fill Variant</h3>
+      <p>Add <code>.fill</code> for a filled background style (no visible border):</p>
+      <div className="example">
+        <input type="text" className="fill" placeholder="Fill Input" />
+        <select className="fill">
+          <option>Fill Select</option>
+        </select>
+        <textarea className="fill" placeholder="Fill Textarea" rows="2"></textarea>
+      </div>
+      <CodeBlock language="html">
+{`<input type="text" class="fill" placeholder="Fill Input">
+<select class="fill">...</select>
+<textarea class="fill" placeholder="Fill Textarea"></textarea>`}
+      </CodeBlock>
+
+      <h3>Select</h3>
+      <div className="example">
+        <select>
+          <option>Standard Select</option>
+          <option>Option 2</option>
+          <option>Option 3</option>
+        </select>
+        <select className="fill">
+          <option>Fill Select</option>
+          <option>Option 2</option>
+        </select>
+      </div>
+      <CodeBlock language="html">
+{`<select>
+  <option>Standard Select</option>
+  <option>Option 2</option>
+</select>
+
+<select class="fill">
+  <option>Fill Select</option>
+</select>`}
+      </CodeBlock>
+
+      <h3>Textarea</h3>
+      <div className="example">
+        <textarea placeholder="Write something..." rows="3"></textarea>
+      </div>
+      <CodeBlock language="html">
+{`<textarea placeholder="Write something..." rows="3"></textarea>`}
+      </CodeBlock>
+
+      <h3>Floating Labels</h3>
+      <p>
+        Wrap an input + label inside <code>.floating</code>. The label floats up on focus
+        or when the input has content. Use <code>placeholder=" "</code> (space) for proper detection.
+      </p>
+      <div className="example">
+        <div className="floating">
+          <input type="email" id="float-email" placeholder=" " />
+          <label htmlFor="float-email">Email Address</label>
+        </div>
+        <div className="floating">
+          <input type="text" id="float-name" placeholder=" " />
+          <label htmlFor="float-name">Full Name</label>
+        </div>
+      </div>
+      <CodeBlock language="html">
+{`<div class="floating">
+  <input type="email" id="email" placeholder=" " />
+  <label for="email">Email Address</label>
 </div>
 
- 
-<label  >
-<input type="checkbox" name="switch" role="switch"  >
-My switch
-</label>
- 
-<fieldset>
-    <legend>Personal Information</legend>
-    <input type="text" placeholder="First Name">
-    <input type="text" placeholder="Last Name">
-    <input type="email" placeholder="Email">
-    <button> Send</button>
+<div class="floating">
+  <input type="text" id="name" placeholder=" " />
+  <label for="name">Full Name</label>
+</div>`}
+      </CodeBlock>
+
+      <h3>Checkbox, Radio & Switch</h3>
+      <div className="example">
+        <div className="flex flex-col gap-2">
+          <label><input type="checkbox" /> Standard checkbox</label>
+          <label><input type="checkbox" defaultChecked /> Checked</label>
+          <label><input type="radio" name="demo" defaultChecked /> Radio option A</label>
+          <label><input type="radio" name="demo" /> Radio option B</label>
+          <label>
+            <input type="checkbox" role="switch" />
+            Switch toggle
+          </label>
+          <label>
+            <input type="checkbox" role="switch" defaultChecked />
+            Switch on
+          </label>
+        </div>
+      </div>
+      <CodeBlock language="html">
+{`<!-- Checkbox -->
+<label><input type="checkbox"> Unchecked</label>
+<label><input type="checkbox" checked> Checked</label>
+
+<!-- Radio -->
+<label><input type="radio" name="group" checked> Option A</label>
+<label><input type="radio" name="group"> Option B</label>
+
+<!-- Switch -->
+<label>
+  <input type="checkbox" role="switch">
+  Toggle me
+</label>`}
+      </CodeBlock>
+
+      <h3>Fieldset & Legend</h3>
+      <p>Group related inputs with <code>&lt;fieldset&gt;</code> and <code>&lt;legend&gt;</code>:</p>
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div className="floating">
+          <input type="text" placeholder=" " />
+          <label>First Name</label>
+        </div>
+        <div className="floating">
+          <input type="text" placeholder=" " />
+          <label>Last Name</label>
+        </div>
+        <div className="floating">
+          <input type="email" placeholder=" " />
+          <label>Email</label>
+        </div>
+        <button>Submit</button>
+      </fieldset>
+      <CodeBlock language="html">
+{`<fieldset>
+  <legend>Personal Information</legend>
+  <div class="floating">
+    <input type="text" placeholder=" " />
+    <label>First Name</label>
+  </div>
+  <div class="floating">
+    <input type="email" placeholder=" " />
+    <label>Email</label>
+  </div>
+  <button>Submit</button>
+</fieldset>`}
+      </CodeBlock>
+
+      <h3>Validation States</h3>
+      <CodeBlock language="html">
+{`<!-- Invalid select -->
+<select aria-invalid="true">
+  <option>Please select...</option>
+</select>
+
+<!-- Disabled fieldset -->
+<fieldset disabled>
+  <legend>Disabled form</legend>
+  <input type="text" placeholder="Can't edit">
+  <button>Can't click</button>
 </fieldset>`}
       </CodeBlock>
     </article>
