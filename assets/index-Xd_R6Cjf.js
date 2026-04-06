@@ -43,7 +43,7 @@ https://github.com/highlightjs/highlight.js/issues/2277`),i=e,r=t),n===void 0&&(
     <article>
       <h1>Welcome</h1>
       <p>This page uses zero CSS classes.</p>
-      <button>Get Started</button>
+      <a href="https://seip25.github.io/lila-css/" role="button">Get Started</a>
     </article>
 
     <div class="grid">
