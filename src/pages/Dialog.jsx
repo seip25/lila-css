@@ -63,15 +63,18 @@ export default function Dialog() {
             <header>
               <div className="container flex items-center between">
                 <h2>Fullscreen Dialog</h2>
-                <button className="destructive" onClick={() => dialogFullRef.current?.close()}>
-                  Close
-                </button>
+             
               </div>
             </header>
             <main className="container text-center">
               <p>An immersive dialog experience that covers the entire screen.</p>
               <p>Perfect for complex forms, media viewers, or multi-step workflows.</p>
             </main>
+            <footer>
+                 <button className="destructive" onClick={() => dialogFullRef.current?.close()}>
+                  Close
+                </button>
+            </footer>
           </article>
         </dialog>
       </div>
