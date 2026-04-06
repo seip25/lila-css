@@ -32,7 +32,10 @@ https://github.com/highlightjs/highlight.js/issues/2277`),i=e,r=t),n===void 0&&(
   <header>
     <nav>
       <h2>My App</h2>
-      <button>Login</button>
+      <div class="flex">
+        <button class="outline">Login</button>
+        <button>Register</button>
+      </div>
     </nav>
   </header>
 
@@ -42,6 +45,21 @@ https://github.com/highlightjs/highlight.js/issues/2277`),i=e,r=t),n===void 0&&(
       <p>This page uses zero CSS classes.</p>
       <button>Get Started</button>
     </article>
+
+    <div class="grid">
+      <article>
+        <h2>Card 1</h2>
+        <p>This is a card.</p>
+      </article>
+      <article>
+        <h2>Card 2</h2>
+        <p>This is a card.</p>
+      </article>
+      <article>
+        <h2>Card 3</h2>
+        <p>This is a card.</p>
+      </article>
+    </div>
   </main>
 
   <footer>
