@@ -22,8 +22,11 @@ https://github.com/highlightjs/highlight.js/issues/2277`),i=e,r=t),n===void 0&&(
 <script src="lila.js"><\/script>`})]}),(0,R.jsxs)(`article`,{children:[(0,R.jsx)(`h2`,{children:`Semantic HTML First`}),(0,R.jsxs)(`p`,{children:[`Lila CSS is built around `,(0,R.jsx)(`strong`,{children:`semantic HTML`}),`. Most elements are styled automatically — you rarely need utility classes. Here's a complete page with zero classes:`]}),(0,R.jsx)(U,{language:`html`,children:`<!DOCTYPE html>
 <html data-theme="light">
 <head>
-  <link rel="stylesheet" href="lila.css" />
-  <script src="lila.js"><\/script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lila CSS - Lightweight Modern CSS Framework</title>
+    <link rel="stylesheet" href="lila.css" />
+    <script src="lila.js"><\/script>
 </head>
 <body>
   <header>
