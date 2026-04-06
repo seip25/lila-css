@@ -7,7 +7,7 @@ export default function Introduction() {
     const jsFile = 'lila.js';
 
     const cssLink = document.createElement('a');
-    cssLink.href = '/' + cssFile;
+    cssLink.href = '/lila-css/' + cssFile;
     cssLink.download = cssFile.split('/').pop();
     document.body.appendChild(cssLink);
     cssLink.click();
@@ -15,7 +15,7 @@ export default function Introduction() {
 
     setTimeout(() => {
       const jsLink = document.createElement('a');
-      jsLink.href = '/' + jsFile;
+      jsLink.href = '/lila-css/' + jsFile;
       jsLink.download = jsFile;
       document.body.appendChild(jsLink);
       jsLink.click();
@@ -61,14 +61,20 @@ export default function Introduction() {
 {`<!DOCTYPE html>
 <html data-theme="light">
 <head>
-  <link rel="stylesheet" href="lila.css" />
-  <script src="lila.js"><\/script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lila CSS - Lightweight Modern CSS Framework</title>
+    <link rel="stylesheet" href="lila.css" />
+    <script src="lila.js"><\/script>
 </head>
 <body>
   <header>
     <nav>
       <h2>My App</h2>
-      <button>Login</button>
+      <div class="flex">
+        <button class="outline">Login</button>
+        <button>Register</button>
+      </div>
     </nav>
   </header>
 
@@ -76,12 +82,27 @@ export default function Introduction() {
     <article>
       <h1>Welcome</h1>
       <p>This page uses zero CSS classes.</p>
-      <button>Get Started</button>
+      <a href="https://seip25.github.io/lila-css/" role="button">Get Started</a>
     </article>
+
+    <div class="grid">
+      <article>
+        <h2>Card 1</h2>
+        <p>This is a card.</p>
+      </article>
+      <article>
+        <h2>Card 2</h2>
+        <p>This is a card.</p>
+      </article>
+      <article>
+        <h2>Card 3</h2>
+        <p>This is a card.</p>
+      </article>
+    </div>
   </main>
 
   <footer>
-    <p>© 2024 My App</p>
+    <p>© 2026 My App</p>
   </footer>
 </body>
 </html>`}
