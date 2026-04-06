@@ -4484,6 +4484,7 @@ section > footer {
   gap: 0.5rem;
   align-items: center;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 aside::-webkit-scrollbar-thumb:hover {
