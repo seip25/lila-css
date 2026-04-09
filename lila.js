@@ -152,16 +152,7 @@ document.addEventListener("click", function (e) {
     setTimeout(initDrawer, 100);
   }
  
-  let debounceTimer;
-  const observer = new MutationObserver(function () {
-    clearTimeout(debounceTimer);
-    debounceTimer = setTimeout(function () {
-      const drawer = document.querySelector(".lila-drawer");
-      const aside = document.querySelector("main > aside");
-      if (drawer && aside) {
-        drawer.innerHTML = aside.innerHTML;
-      }
-    }, 200);
+  
   });
 
   observer.observe(document.body, { childList: true, subtree: true });
