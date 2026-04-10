@@ -152,8 +152,5 @@ document.addEventListener("click", function (e) {
     setTimeout(initDrawer, 100);
   }
  
-  
-  });
-
-  observer.observe(document.body, { childList: true, subtree: true });
+   
 })();
